@@ -35,4 +35,4 @@ jobs:
 
       - run:
           name: Deploy to Firebase Hosting
-          command: ./node_modules/.bin/firebase deploy --project itcamp15-landing --token=$FIREBASE_TOKEN
+          command: ./node_modules/.bin/firebase deploy --project itcamp15-landing --token=$FIREBASE_TOKEN --only hosting:itcamp15-landing
