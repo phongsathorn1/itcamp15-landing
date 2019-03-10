@@ -35,4 +35,12 @@ jobs:
 
       - run:
           name: Deploy to Firebase Hosting
-          command: ./node_modules/.bin/firebase deploy --project itcamp15-landing --token=$FIREBASE_TOKEN --only hosting:itcamp15-landing
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                ./node_modules/.bin/firebase deploy --project itcamp15-landing --token=$FIREBASE_TOKEN --only hosting:itcamp15-landing
+            elif [ "${CIRCLE_BRANCH}" == "development" ]; then
+                ./node_modules/.bin/firebase deploy --project itcamp15-landing --token=$FIREBASE_TOKEN --only hosting:itcamp15-landing-dev
+            else
+                echo "unknown branch ${CIRCLE_BRANCH}"
+                exit 1
+            fi
