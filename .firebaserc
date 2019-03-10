@@ -1,1 +1,14 @@
-{}
+{
+  "targets": {
+    "itcamp15-landing": {
+      "hosting": {
+        "prod": [
+          "itcamp15-landing"
+        ],
+        "dev": [
+          "itcamp15-landing-dev"
+        ]
+      }
+    }
+  }
+}
