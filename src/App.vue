@@ -1,12 +1,16 @@
 <template>
-  <div id="app">Hello World!</div>
+  <div id="app">
+    <Heading/>
+  </div>
 </template>
 
 <script>
 
+import Heading from '@/components/section/Heading.vue'
 export default {
   name: 'app',
   components: {
+    Heading
   }
 }
 </script>
