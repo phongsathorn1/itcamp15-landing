@@ -13,6 +13,7 @@ export default {
 
 <style lang="scss">
 body {
+  font-family: "Athiti", sans-serif;
   margin: 0;
   padding: 0;
 }
