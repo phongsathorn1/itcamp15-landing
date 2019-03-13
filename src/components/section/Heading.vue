@@ -26,12 +26,12 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: calc(100vh - 200px);
   padding-top: 200px;
 }
 
 #heading-content {
   text-align: center;
+  margin-bottom: 100px;
 }
 
 span {
