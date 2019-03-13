@@ -38,14 +38,13 @@ export default {
 .sponsor-row {
   display: flex;
   justify-content: center;
-  margin-top: 6.5em;
+  margin-top: 5em;
 }
 
 .sponsor-lv1 {
   width: 131px;
   height: 131px;
   margin: 0 3em;
-  transform: rotate(45deg);
   border: solid 3px #ffffff;
 }
 
@@ -53,7 +52,6 @@ export default {
   width: 100px;
   height: 100px;
   margin: 0 2.5em;
-  transform: rotate(45deg);
   border: solid 3px #ffffff;
 }
 

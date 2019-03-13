@@ -38,5 +38,6 @@ body {
   font-family: "Athiti", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 </style>
