@@ -39,4 +39,24 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.home-section h1{
+    color: #eea113;
+    font-size: 50px;
+}
+
+.home-section{
+  padding: 25px 0px;
+  font-size: 23px;
+  position: relative;
+}
+
+.home-section .subhead{
+  display: block;
+}
+
+.ractangle-top-1{
+  background: #FFF;
+  height: 100px;
+}
 </style>
