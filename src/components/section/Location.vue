@@ -40,7 +40,7 @@ export default {
 <style lang="scss" scoped>
 #location{
     color: #ffffff;
-    padding: 200px 0px;
+    padding: 150px 0px;
     background-image: url(../../assets/location-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
