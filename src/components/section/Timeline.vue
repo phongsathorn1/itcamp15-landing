@@ -1,11 +1,13 @@
 <template>
     <section class="home-section" id="timeline">
+        <div class="strip-top"></div>
+        <div class="strip-bottom"></div>
         <div class="container">
             <h1>กำหนดการ</h1>
             <span class="subhead">ตารางเวลาของค่ายไอทีแคมป์</span>
             <div class="timeline-wrapper">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 timeline-block">
                         <div class="temp-block">
                         </div>
                         <div class="timeline-title">
@@ -15,7 +17,7 @@
                             15 มีนาคม - 30 เมษายน
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 timeline-block">
                         <div class="temp-block">
                         </div>
                         <div class="timeline-title">
@@ -25,7 +27,7 @@
                             15 มีนาคม - 30 เมษายน
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 timeline-block">
                         <div class="temp-block">
                         </div>
                         <div class="timeline-title">
@@ -35,7 +37,7 @@
                             15 มีนาคม - 30 เมษายน
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 timeline-block">
                         <div class="temp-block">
                         </div>
                         <div class="timeline-title">
@@ -57,18 +59,38 @@ export default {
 </script>
 
 <style lang="scss">
-.home-section h1{
-    color: #eea113;
-    font-size: 50px;
-}
-
-#timeline.home-section .subhead{
+#timeline .subhead{
     color: #242424;
     font-size: 25px;
 }
-#timeline.home-section{
-    padding: 30px 0px;
+
+#timeline{
     background: #ebebeb;
+}
+
+#timeline .strip-top{
+    background: #ebebeb;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: -45px;
+    transform: skewY(3deg);
+    z-index: 99;
+}
+
+#timeline .strip-bottom{
+    background: #ebebeb;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: -45px;
+    transform: skewY(-3deg);
+    z-index: 99;
+}
+
+#timeline .container{
+    position: relative;
+    z-index: 100;
 }
 
 #timeline .timeline-wrapper{
@@ -84,6 +106,10 @@ export default {
 #timeline .timeline-wrapper .timeline-range{
     font-size: 25px;
     color: #242424
+}
+
+#timeline .timeline-block{
+    margin-bottom: 30px;
 }
 
 .temp-block{
