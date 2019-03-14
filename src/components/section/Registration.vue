@@ -57,12 +57,11 @@ export default {
 #regsiter-wrapper {
   width: 100%;
   text-align: center;
-  padding-top: 3em;
+  padding-top: 5em;
 
   h1 {
     font-weight: 500;
     font-size: 2em;
-    margin-bottom: -0.5em;
   }
 
   h3 {
@@ -74,7 +73,7 @@ export default {
   display: flex;
   justify-content: center;
   margin-top: 5em;
-  margin-bottom: 5em;
+  margin-bottom: 10em;
 }
 
 .register-card-wrapper {
@@ -93,12 +92,15 @@ export default {
 .register-card {
   h2 {
     text-align: center;
-    margin-bottom: -0.7em;
+    margin-top: 0.7em;
   }
 
   h3 {
-    margin-top: -0.5em;
     font-weight: 400;
+  }
+
+  p {
+    margin-top: -0.5em;
   }
 }
 

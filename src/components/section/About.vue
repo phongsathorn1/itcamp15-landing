@@ -31,7 +31,7 @@ export default {
   width: 100%;
   background-image: linear-gradient(to bottom, #17013c, #22002b);
   padding: 15vw 0;
-  min-height: 50vh;
+  min-height: 750px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,13 +73,14 @@ export default {
 
   h3 {
     font-weight: 200;
+    margin-bottom: 1em;
   }
 
   h2 {
     color: #eea113;
     font-size: 2.5em;
-    margin-top: -0.5em;
     font-weight: 500;
+    margin-bottom: 1em;
   }
 
   p {
