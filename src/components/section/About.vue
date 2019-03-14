@@ -1,7 +1,7 @@
 <template>
   <div id="about-container">
     <div id="about-box">
-      <div id="inside-box">
+      <div id="box-2">
         <div id="box-3"></div>
       </div>
     </div>
@@ -50,7 +50,7 @@ export default {
   z-index: 2;
 }
 
-#inside-box {
+#box-2 {
   border: 0.5px solid #444;
   width: 100%;
   height: 100%;
@@ -66,6 +66,7 @@ export default {
 #about-content {
   position: absolute;
   width: 100%;
+  max-width: 1200px;
   text-align: center;
   color: white;
   z-index: 3;
