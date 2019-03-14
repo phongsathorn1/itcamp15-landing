@@ -1,15 +1,13 @@
 <template>
   <div id="heading-container">
-    <div class="container">
-      <div id="heading-content">
-        <img src="../../assets/logo.png" alt>
-        <h2>ไอทีแคมป์ ครั้งที่ 15</h2>
-        <h1>มนตราราตรี ไอทีผู้พิทักษ์</h1>
-        <p>31 พฤษภาคม - 2 มิถุนายน 2652</p>
-        <span>คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</span>
-      </div>
-      <Sponsor/>
+    <div id="heading-content">
+      <img src="../../assets/logo.png" alt>
+      <h2>ไอทีแคมป์ ครั้งที่ 15</h2>
+      <h1>มนตราราตรี ไอทีผู้พิทักษ์</h1>
+      <p>31 พฤษภาคม - 2 มิถุนายน 2652</p>
+      <span>คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</span>
     </div>
+    <Sponsor/>
   </div>
 </template>
 
@@ -29,7 +27,6 @@ export default {
   background-repeat: no-repeat;
   width: 100%;
   padding-top: 200px;
-  padding-bottom: 250px
 }
 
 #heading-content {
@@ -44,23 +41,20 @@ span {
 }
 
 p {
-  margin-top: -0.6em;
   font-size: 1.5em;
   color: #fff;
-  margin-block-end: 0.3em;
 }
 
 h2 {
   color: #fff;
   font-size: 2em;
   font-weight: 500;
-  margin-block-end: 0.5em;
 }
 
 h1 {
   color: #f9ba47;
   font-size: 2.5em;
   font-weight: 600;
-  margin-top: -0.3em;
+  margin-top: 1em;
 }
 </style>
