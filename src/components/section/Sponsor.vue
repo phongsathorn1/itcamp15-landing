@@ -33,6 +33,8 @@ export default {
   background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
   width: 100%;
   padding-bottom: 5em;
+  position: relative;
+  z-index: 100;
 }
 
 .sponsor-row {

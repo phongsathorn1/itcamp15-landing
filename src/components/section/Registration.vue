@@ -1,146 +1,220 @@
 <template>
-  <div id="regsiter-wrapper">
-    <h1>เลือกสาขาที่คุณต้องการ</h1>
-    <h3>คลิกค่ายที่ต้องการเพื่อดูรายละเอียดและสมัคร</h3>
-    <div id="register-container">
-      <div class="register-card">
-        <div class="register-card-wrapper" id="register-app-border">
-          <div class="register-card-box"></div>
+  <section class="home-section" id="register">
+    <div class="strip-top"></div>
+    <div class="container">
+      <h1 class="text-center">เลือกสาขาที่คุณต้องการ</h1>
+      <span class="subhead text-center">คลิกค่ายที่ต้องการเพื่อดูรายละเอียดและสมัคร</span>
+      <div class="register-wrapper">
+        <div class="register-block app-camp">
+          <div class="register-icon-wrapper">
+            <div class="register-icon">
+              <div class="temp-register-icon">
+                T
+              </div>
+            </div>
+          </div>
+          <div class="register-detail">
+              <div class="register-title">
+                Applicatotoro
+              </div>
+              <div class="register-subtitle">
+                พัฒนาแอปพลิเคชั่น
+              </div>
+              <div class="register-status">
+                สมัครแล้ว <b>30 คน</b>
+              </div>
+          </div>
         </div>
-        <h2 id="register-app">Appermort</h2>
-        <p>พัฒนาแอปพลิเคชั่น</p>
-        <h3>สมัครแล้ว 0 คน</h3>
-      </div>
-      <div class="register-card">
-        <div class="register-card-wrapper" id="register-network-border">
-          <div class="register-card-box"></div>
+        <div class="register-block network-camp">
+          <div class="register-icon-wrapper">
+            <div class="register-icon">
+              <div class="temp-register-icon">
+              </div>
+            </div>
+          </div>
+          <div class="register-detail">
+            <div class="register-title">
+              Applicatotoro
+            </div>
+            <div class="register-subtitle">
+              พัฒนาแอปพลิเคชั่น
+            </div>
+            <div class="register-status">
+              สมัครแล้ว <b>30 คน</b>
+            </div>
+          </div>
         </div>
-        <h2 id="register-network">Netherine</h2>
-        <p>พัฒนาแอปพลิเคชั่น</p>
-        <h3>สมัครแล้ว 0 คน</h3>
-      </div>
-      <div class="register-card">
-        <div class="register-card-wrapper" id="register-data-border">
-          <div class="register-card-box"></div>
+        <div class="register-block data-camp">
+          <div class="register-icon-wrapper">
+            <div class="register-icon">
+              <div class="temp-register-icon">
+              </div>
+            </div>
+          </div>
+          <div class="register-detail">
+            <div class="register-title">
+              Applicatotoro
+            </div>
+            <div class="register-subtitle">
+              พัฒนาแอปพลิเคชั่น
+            </div>
+            <div class="register-status">
+              สมัครแล้ว <b>30 คน</b>
+            </div>
+          </div>
         </div>
-        <h2 id="register-data">Dragota</h2>
-        <p>พัฒนาแอปพลิเคชั่น</p>
-        <h3>สมัครแล้ว 0 คน</h3>
-      </div>
-      <div class="register-card">
-        <div class="register-card-wrapper" id="register-game-border">
-          <div class="register-card-box"></div>
+        <div class="register-block game-camp">
+          <div class="register-icon-wrapper">
+            <div class="register-icon">
+              <div class="temp-register-icon">
+              </div>
+            </div>
+          </div>
+          <div class="register-detail">
+            <div class="register-title">
+              Applicatotoro
+            </div>
+            <div class="register-subtitle">
+              พัฒนาแอปพลิเคชั่น
+            </div>
+            <div class="register-status">
+              สมัครแล้ว <b>30 คน</b>
+            </div>
+          </div>
         </div>
-        <h2 id="register-game">GrindelGame</h2>
-        <p>พัฒนาแอปพลิเคชั่น</p>
-        <h3>สมัครแล้ว 0 คน</h3>
-      </div>
-      <div class="register-card">
-        <div class="register-card-wrapper" id="register-iot-border">
-          <div class="register-card-box"></div>
+        <div class="register-block iot-camp">
+          <div class="register-icon-wrapper">
+            <div class="register-icon">
+              <div class="temp-register-icon">
+              </div>
+            </div>
+          </div>
+          <div class="register-detail">
+            <div class="register-title">
+              Applicatotoro
+            </div>
+            <div class="register-subtitle">
+              พัฒนาแอปพลิเคชั่น
+            </div>
+            <div class="register-status">
+              สมัครแล้ว <b>30 คน</b>
+            </div>
+          </div>
         </div>
-        <h2 id="register-iot">Dobby of Things</h2>
-        <p>พัฒนาแอปพลิเคชั่น</p>
-        <h3>สมัครแล้ว 0 คน</h3>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
-#regsiter-wrapper {
-  width: 100%;
-  text-align: center;
-  padding-top: 5em;
-
-  h1 {
-    font-weight: 500;
-    font-size: 2em;
-  }
-
-  h3 {
-    font-weight: 200;
-  }
+#register{
+  padding-top: 50px;
+  padding-bottom: 150px;
 }
 
-#register-container {
+#register .strip-top{
+  background: #ffffff;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: -45px;
+  transform: skewY(-3deg);
+  z-index: 99;
+}
+
+#register .container{
+  position: relative;
+  z-index: 100;
+}
+
+#register .register-wrapper{
   display: flex;
-  justify-content: center;
-  margin-top: 5em;
-  margin-bottom: 10em;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
-.register-card-wrapper {
-  margin: 0 2em;
-  padding: 1em;
-  width: 200px;
+#register .register-block{
+  margin: 0px 20px;
+}
+
+#register .register-icon-wrapper{
+  position: relative;
+  transform: rotate(45deg);
+}
+
+#register .app-camp .register-icon-wrapper{
+  border: 2px solid #9013fe;
+  padding: 5px;
+}
+
+#register .network-camp .register-icon-wrapper{
+  border: 2px solid #f5a623;
+  padding: 5px;
+}
+
+#register .data-camp .register-icon-wrapper{
+  border: 2px solid #1fb4ec;
+  padding: 5px;
+}
+
+#register .game-camp .register-icon-wrapper{
+  border: 2px solid #6c980d;
+  padding: 5px;
+}
+
+#register .iot-camp .register-icon-wrapper{
+  border: 2px solid #d61732;
+  padding: 5px;
+}
+
+#register .register-detail{
+  margin-top: 50px;
   text-align: center;
 }
 
-.register-card-box {
-  width: 100%;
-  height: 200px;
-  background-color: #888;
+#register .register-detail .register-title,
+#register .register-detail b{
+  font-weight: 600;
 }
 
-.register-card {
-  h2 {
-    text-align: center;
-    margin-top: 0.7em;
-  }
-
-  h3 {
-    font-weight: 400;
-  }
-
-  p {
-    margin-top: -0.5em;
-  }
-}
-
-#register-app {
+#register .app-camp .register-title{
   color: #9013fe;
 }
 
-#register-app-border {
-  border: #9013fe 1px solid;
-}
-
-#register-network {
+#register .network-camp .register-title{
   color: #f5a623;
 }
 
-#register-network-border {
-  border: #f5a623 1px solid;
-}
-
-#register-data {
+#register .data-camp .register-title{
   color: #1fb4ec;
 }
 
-#register-data-border {
-  border: #1fb4ec 1px solid;
-}
-
-#register-game {
+#register .game-camp .register-title{
   color: #6c980d;
 }
 
-#register-game-border {
-  border: #6c980d 1px solid;
-}
-
-#register-iot {
+#register .iot-camp .register-title{
   color: #d61732;
 }
 
-#register-iot-border {
-  border: #d61732 1px solid;
+#register .temp-register-icon{
+  background: #cccccc;
+  height: 120px;
+  width: 120px;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 768px){
+  #register .register-wrapper{
+    overflow-x: scroll;
+  }
+  #register .register-block{
+    padding: 0px 50px;
+  }
 }
 </style>

@@ -1,100 +1,101 @@
 <template>
-  <div id="about-container">
-    <div id="about-box">
-      <div id="box-2">
-        <div id="box-3"></div>
+  <section class="home-section" id="about">
+    <div class="box-bg">
+      <div class="box-bg-wrapper">
+        <div class="box-2">
+          <div class="box-3"></div>
+        </div>
       </div>
     </div>
-    <div id="about-content">
-      <h3>เรื่องราวแห่ง ITCAMP ครั้งที่ 15</h3>
-      <h2>ปฐมบทแห่งมนตรา</h2>
-      <p
-        id="about-justify"
-      >การสร้างสรรค์ “Content” หรือ “เนื้อหา” ถือเป็นหัวใจสำคัญของการทำเว็บ เพราะเนื้อหาที่ดี จะสร้างคุณค่าและความน่าสนใจให้กับเว็บของพวกเรา สาขานี้เหมาะกับน้อง ๆ ที่รักในการเขียน การเล่าเรื่อง และการใช้ภาษา ให้เทพ Apollo ผู้เก่งกาจ เป็นตัวแทนของเหล่านักเขียนคนเก่ง มาเอาชนะใจผู้อ่านให้จงได้!</p>
-      <p>
-        <b>ไอทีแคมป์ หรือค่ายปฏิบัติการไอที</b> เป็นค่ายที่จัดขึึ้นโดย
-        <br>คณะเทคโนโลยีสารสนเทศ สถาบันพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
-        <br>เพื่อส่งเสริมอะไรบลาๆก็ว่ากันไป
-      </p>
+    <div class="container text-center">
+      <span class="subhead">เรื่องราวแห่ง ITCAMP ครั้งที่ 15</span>
+      <h1>ปฐมบทแห่งมนตรา</h1>
+      <div class="about-wrapper">
+        <p>การสร้างสรรค์ “Content” หรือ “เนื้อหา” ถือเป็นหัวใจสำคัญของการทำเว็บ เพราะเนื้อหาที่ดี จะสร้างคุณค่าและความน่าสนใจให้กับเว็บของพวกเรา สาขานี้เหมาะกับน้อง ๆ ที่รักในการเขียน การเล่าเรื่อง และการใช้ภาษา ให้เทพ Apollo ผู้เก่งกาจ เป็นตัวแทนของเหล่านักเขียนคนเก่ง มาเอาชนะใจผู้อ่านให้จงได้!</p>
+        <p>ไอทีแคมป์ หรือค่ายปฏิบัติการไอที เป็นค่ายที่จัดขึ้นโดย
+        คณะเทคโนโลยีสารสนเทศ สถาบันพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+        เพื่อส่งเสริมอะไรบลาๆก็ว่ากันไป </p>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
-#about-container {
-  width: 100%;
+#about{
+  min-height: calc(100vh - 100px);
   background-image: linear-gradient(to bottom, #17013c, #22002b);
-  padding: 15vw 0;
-  min-height: 750px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #ffffff;
+  padding-bottom: 150px;
+  padding-top: 50px;
 }
 
-#about-box {
+#about .container{
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 4vh;
+}
+
+#about .about-wrapper{
+  padding: 50px 0px;
+  width: 55%;
+  margin: auto;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 100;
+  line-height: 44px;
+}
+
+.box-bg{
+  width: 100%;
+  height: 100%;
   position: absolute;
-  margin: 0 auto;
-  width: 45vw;
-  height: 45vw;
-  max-width: 450px;
-  max-height: 450px;
+  overflow: hidden;
+  padding: 30px 0px;
+}
+
+.box-bg-wrapper{
+  margin: auto;
+  margin-top: 100px;
+  width: 500px;
+  height: 500px;
   border: 0.5px solid #555;
   padding: 2em;
   transform: rotate(45deg);
-  z-index: 2;
 }
 
-#box-2 {
+// @media (min-width: 1200px){
+//   .box-bg-wrapper {
+//     max-width: 600px;
+//     max-height: 600px;
+//   }
+// }
+
+@media (max-width: 768px){
+  #about .about-wrapper{
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .box-bg-wrapper {
+    width: 100vh;
+    height: 100vh;
+  }
+}
+
+.box-2 {
   border: 0.5px solid #444;
   width: 100%;
   height: 100%;
 }
 
-#box-3 {
+.box-3 {
   margin: 2em;
   width: calc(100% - 4em);
   height: calc(100% - 4em);
   border: 0.5px solid #222;
-}
-
-#about-content {
-  position: absolute;
-  width: 100%;
-  max-width: 1200px;
-  text-align: center;
-  color: white;
-  z-index: 3;
-
-  h3 {
-    font-weight: 200;
-    margin-bottom: 1em;
-  }
-
-  h2 {
-    color: #eea113;
-    font-size: 2.5em;
-    font-weight: 500;
-    margin-bottom: 1em;
-  }
-
-  p {
-    width: 47%;
-    margin: 0 auto 2em auto;
-    font-weight: 200;
-  }
-
-  b {
-    font-weight: 400;
-  }
-}
-
-#about-justify {
-  text-align: justify;
 }
 </style>
