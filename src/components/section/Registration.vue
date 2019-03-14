@@ -213,5 +213,8 @@ export default {}
   #register .register-wrapper{
     overflow-x: scroll;
   }
+  #register .register-block{
+    padding: 0px 25px;
+  }
 }
 </style>
