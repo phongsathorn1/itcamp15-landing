@@ -28,13 +28,13 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: calc(100vh - 200px);
   padding-top: 200px;
   padding-bottom: 250px
 }
 
 #heading-content {
   text-align: center;
+  margin-bottom: 100px;
 }
 
 span {
