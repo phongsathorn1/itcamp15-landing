@@ -116,6 +116,14 @@ export default {}
   padding-bottom: 150px;
 }
 
+#register h1{
+  color: #333333;
+}
+
+#register .subhead{
+  color: #1f1f1f;
+}
+
 #register .strip-top{
   background: #ffffff;
   width: 100%;
