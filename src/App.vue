@@ -42,13 +42,13 @@ body {
 }
 
 .home-section h1{
-    color: #eea113;
-    font-size: 50px;
+  color: #eea113;
+  font-size: 50px;
 }
 
 .home-section{
   padding: 25px 0px;
-  font-size: 23px;
+  font-size: 1.2em;
   position: relative;
 }
 
