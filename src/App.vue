@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <navbar/>
     <Heading/>
     <About/>
     <Registration/>
@@ -18,6 +19,7 @@ import Timeline from '@/components/section/Timeline.vue'
 import Location from '@/components/section/Location.vue'
 import QA from '@/components/section/QA.vue'
 import Gallery from '@/components/section/Gallery.vue'
+import Navbar from '@/components/Navbar.vue'
 
 export default {
   name: 'app',
@@ -28,7 +30,8 @@ export default {
     Timeline,
     Location,
     QA,
-    Gallery
+    Gallery,
+    Navbar
   }
 }
 </script>
