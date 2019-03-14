@@ -55,23 +55,20 @@ span {
 }
 
 p {
-  margin-top: -0.6em;
   font-size: 1.5em;
   color: #fff;
-  margin-block-end: 0.3em;
 }
 
 h2 {
   color: #fff;
   font-size: 2em;
   font-weight: 500;
-  margin-block-end: 0.5em;
 }
 
 h1 {
   color: #f9ba47;
   font-size: 2.5em;
   font-weight: 600;
-  margin-top: -0.3em;
+  margin-top: 1em;
 }
 </style>
