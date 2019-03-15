@@ -8,10 +8,10 @@
 
       <div class="navbar-nav-scroll" id="navbar">
         <ul class="navbar-nav mr-auto ml-auto mx-auto flex-row">
-          <li class="nav-item"><a class="nav-link" href="javascript:void(0)">เนื้อเรื่อง</a></li>
-          <li class="nav-item"><a class="nav-link" href="javascript:void(0)">แคมป์ย่อย</a></li>
-          <li class="nav-item"><a class="nav-link" href="javascript:void(0)">กำหนดการ</a></li>
-          <li class="nav-item"><a class="nav-link" href="javascript:void(0)">คำถามที่พบบ่อย</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" v-scroll-to="'#about'">เนื้อเรื่อง</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" v-scroll-to="'#register'">แคมป์ย่อย</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" v-scroll-to="'#timeline'">กำหนดการ</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" v-scroll-to="'#qa'">คำถามที่พบบ่อย</a></li>
         </ul>
       </div>
 
