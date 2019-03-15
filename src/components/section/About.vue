@@ -33,6 +33,10 @@ export default {}
   padding-top: 50px;
 }
 
+#about .subhead{
+  color: #ffffff;
+}
+
 #about .container{
   position: relative;
   padding-top: 150px;

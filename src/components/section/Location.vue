@@ -3,17 +3,40 @@
         <div class="hover-dark-bg"></div>
         <div class="container">
             <h1 class="text-right">สถานที่จัดค่าย</h1>
-            <span class="subhead text-right">คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</span>
+            <span class="subhead text-right">คณะเทคโนโลยีสารสนเทศ<br>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</span>
             <div class="row location-wrapper">
                 <div class="col-md-5">
                     <ul class="transportation-list">
                         <li>
-                            <div class="li-head">เดินทางโดยรถเมล์</div>
-                            รถประจำทางที่ผ่าน สาย 51, 52, 150, 356, ปอ.150, ปอ.166
+                            <div class="li-head">Airport Rail Link</div>
+                            จากสถานีพญาไท ผ่านสถานีราชปรารภ มักกะสัน รามคำแหง หัวหมาก บ้านทับช้าง ใช้เวลาประมาณ 30 นาทีลงที่สถานีลาดกระบังแล้วต่อรถไฟที่สถานีรถไฟลาดกระบัง หรือต่อรถสองแถวสาย 777 (เขียนว่าเข้าเทคโนฯ)
                         </li>
                         <li>
-                            <div class="li-head">เดินทางโดยรถเมล์</div>
-                            รถประจำทางที่ผ่าน สาย 51, 52, 150, 356, ปอ.150, ปอ.166
+                            <div class="li-head">สองแถว</div>
+                            <ul>
+                                <li>วงกลมวนซ้ายแอร์พอร์ตลิงค์ 7 บาท 5.00-22.00 15 นาที</li>
+                                <li>หัวตะเข้ – เทคโน – หนองจอก 7 บาท 5.00-22.00 10 นาที</li>
+                                <li>หัวตะเข้ – เทคโน – ฮอนด้า 7 บาท 5.00-22.00 10 นาที</li>
+                                <li>วัดราชโกษา – เทคโน – ร่มเกล้า 7 บาท 5.00-20.00 20 นาที</li>
+                                <li>หัวตะเข้ – เทคโน – วัดอุทัย 10 บาท 5.00-17.30 40 นาที</li>
+                                <li>หัวตะเข้ – เทคโน – บึงบัว 10 บาท 5.00-17.30 30 นาที</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="li-head">รถตู้ด่วนพิเศษ</div>
+                            <ul>
+                                <li>หมอชิตใหม่ - พระจอมเกล้าลาดกระบัง (ทางด่วน)</li>
+                                <li>อนุสาวรีย์ชัย - พระจอมเกล้าลาดกระบัง (ทางด่วน)</li>
+                                <li>รังสิตฟิวเจอร์ - พระจอมเกล้าลาดกระบัง (ทางด่วน)</li>
+                                <li>แฮปปี้แลนด์ - พระจอมเกล้าลาดกระบัง (ทางด่วน)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="li-head">รถตู้ประจำทาง</div>
+                            <ul>
+                                <li>หัวตะเข้ – หนองจอก</li>
+                                <li>มีนบุรี – บึงบัว – หัวตะเข้</li>
+                            </ul>
                         </li>
                         <li>
                             <div class="li-head">เดินทางโดยรถเมล์</div>
@@ -46,6 +69,10 @@ export default {
     background-repeat: no-repeat;
 }
 
+#location .subhead{
+    color: #ffffff;
+}
+
 #location .stripe{
     transform: skewY(6deg);
     position: absolute;
@@ -63,7 +90,7 @@ export default {
     text-align: right;
 }
 #location .li-head{
-    font-weight: bold;
+    font-weight: 600;
 }
 
 #location .transportation-list{
@@ -72,6 +99,10 @@ export default {
 
 #location .transportation-list li{
     margin-bottom: 20px;
+}
+
+#location .transportation-list ul li{
+    margin: 0px;
 }
 
 #location .location-wrapper{

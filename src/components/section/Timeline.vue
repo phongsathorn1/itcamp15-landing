@@ -7,44 +7,44 @@
             <span class="subhead">ตารางเวลาของค่ายไอทีแคมป์</span>
             <div class="timeline-wrapper">
                 <div class="row">
-                    <div class="col-md-3 timeline-block">
+                    <div class="col-md-3 col-sm-6 timeline-block">
                         <div class="temp-block">
                         </div>
                         <div class="timeline-title">
-                            รับสมัครค่าย
+                            เปิดรับสมัคร
                         </div>
                         <div class="timeline-range">
-                            15 มีนาคม - 30 เมษายน
+                            15 มีนาคม - 14 เมษายน
                         </div>
                     </div>
-                    <div class="col-md-3 timeline-block">
+                    <div class="col-md-3 col-sm-6 timeline-block">
                         <div class="temp-block">
                         </div>
                         <div class="timeline-title">
-                            รับสมัครค่าย
+                            ประกาศผล
                         </div>
                         <div class="timeline-range">
-                            15 มีนาคม - 30 เมษายน
+                            26 เมษายน
                         </div>
                     </div>
-                    <div class="col-md-3 timeline-block">
+                    <div class="col-md-3 col-sm-6 timeline-block">
                         <div class="temp-block">
                         </div>
                         <div class="timeline-title">
-                            รับสมัครค่าย
+                            ยืนยันสิทธิ์
                         </div>
                         <div class="timeline-range">
-                            15 มีนาคม - 30 เมษายน
+                            26 เมษายน - 3 พฤษภาคม
                         </div>
                     </div>
-                    <div class="col-md-3 timeline-block">
+                    <div class="col-md-3 col-sm-6 timeline-block">
                         <div class="temp-block">
                         </div>
                         <div class="timeline-title">
-                            รับสมัครค่าย
+                            เปิดค่าย
                         </div>
                         <div class="timeline-range">
-                            15 มีนาคม - 30 เมษายน
+                            33 พฤษภาคม
                         </div>
                     </div>
                 </div>
@@ -59,11 +59,6 @@ export default {
 </script>
 
 <style lang="scss">
-#timeline .subhead{
-    color: #242424;
-    font-size: 25px;
-}
-
 #timeline{
     background: #ebebeb;
 }
@@ -98,13 +93,13 @@ export default {
     text-align: center;
 }
 #timeline .timeline-wrapper .timeline-title{
-    font-size: 30px;
+    font-size: 1.5em;
     color: #eea113;
     margin-top: 50px;
 }
 
 #timeline .timeline-wrapper .timeline-range{
-    font-size: 25px;
+    font-size: 1em;
     color: #242424
 }
 

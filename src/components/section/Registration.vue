@@ -15,12 +15,12 @@
           </div>
           <div class="register-detail">
               <div class="register-title">
-                Applicatotoro
+                Appermort
               </div>
               <div class="register-subtitle">
                 พัฒนาแอปพลิเคชั่น
               </div>
-              <div class="register-status">
+              <div class="register-status" v-if="showStatus">
                 สมัครแล้ว <b>30 คน</b>
               </div>
           </div>
@@ -34,12 +34,12 @@
           </div>
           <div class="register-detail">
             <div class="register-title">
-              Applicatotoro
+              Netherine
             </div>
             <div class="register-subtitle">
-              พัฒนาแอปพลิเคชั่น
+              เน็ตเวิร์ค
             </div>
-            <div class="register-status">
+            <div class="register-status" v-if="showStatus">
               สมัครแล้ว <b>30 คน</b>
             </div>
           </div>
@@ -53,12 +53,12 @@
           </div>
           <div class="register-detail">
             <div class="register-title">
-              Applicatotoro
+              Dragota
             </div>
             <div class="register-subtitle">
-              พัฒนาแอปพลิเคชั่น
+              วิเคราะห์ข้อมูล
             </div>
-            <div class="register-status">
+            <div class="register-status" v-if="showStatus">>
               สมัครแล้ว <b>30 คน</b>
             </div>
           </div>
@@ -72,12 +72,12 @@
           </div>
           <div class="register-detail">
             <div class="register-title">
-              Applicatotoro
+              GrindelGame
             </div>
             <div class="register-subtitle">
-              พัฒนาแอปพลิเคชั่น
+              พัฒนาเกมส์
             </div>
-            <div class="register-status">
+            <div class="register-status" v-if="showStatus">>
               สมัครแล้ว <b>30 คน</b>
             </div>
           </div>
@@ -91,12 +91,12 @@
           </div>
           <div class="register-detail">
             <div class="register-title">
-              Applicatotoro
+              Dobby of Things
             </div>
             <div class="register-subtitle">
-              พัฒนาแอปพลิเคชั่น
+              อินเตอร์เน็ตแห่งสรรพสิ่ง
             </div>
-            <div class="register-status">
+            <div class="register-status" v-if="showStatus">
               สมัครแล้ว <b>30 คน</b>
             </div>
           </div>
@@ -107,12 +107,18 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      showStatus: false
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
 #register{
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 150px;
 }
 
@@ -120,9 +126,9 @@ export default {}
   color: #333333;
 }
 
-#register .subhead{
-  color: #1f1f1f;
-}
+// #register .subhead{
+//   color: #1f1f1f;
+// }
 
 #register .strip-top{
   background: #ffffff;
@@ -148,11 +154,15 @@ export default {}
 
 #register .register-block{
   margin: 0px 20px;
+  width: 100%;
 }
 
 #register .register-icon-wrapper{
   position: relative;
   transform: rotate(45deg);
+  height: 120px;
+  width: 120px;
+  margin: auto;
 }
 
 #register .app-camp .register-icon-wrapper{

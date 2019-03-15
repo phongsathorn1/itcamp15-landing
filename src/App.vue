@@ -46,7 +46,7 @@ body {
 
 .home-section h1{
   color: #eea113;
-  font-size: 50px;
+  font-size: 2em;
 }
 
 .home-section{
@@ -62,5 +62,14 @@ body {
 .ractangle-top-1{
   background: #FFF;
   height: 100px;
+}
+
+.subhead{
+  color: #6d6d6d;
+  font-size: 1.2em;
+}
+
+b{
+  font-weight: 600;
 }
 </style>

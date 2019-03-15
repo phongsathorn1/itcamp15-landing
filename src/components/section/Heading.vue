@@ -3,10 +3,14 @@
     <div class="container">
       <div id="heading-content">
         <img src="../../assets/logo.png" alt>
-        <h2>ไอทีแคมป์ ครั้งที่ 15</h2>
-        <h1>มนตราราตรี ไอทีผู้พิทักษ์</h1>
-        <p>31 พฤษภาคม - 2 มิถุนายน 2652</p>
-        <span>คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</span>
+        <div class="camp">
+          <h2>ไอทีแคมป์ ครั้งที่ 15</h2>
+          <h1>มนตราราตรี ไอทีผู้พิทักษ์</h1>
+          <div class="camp-date">
+            <p>31 พฤษภาคม - 2 มิถุนายน 2652</p>
+            <span>คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</span>
+          </div>
+        </div>
       </div>
     </div>
     <Sponsor/>
@@ -38,6 +42,18 @@ export default {
   margin-bottom: 100px;
 }
 
+#heading-content .camp{
+  margin-top: 20px;
+}
+
+#heading-content .camp p{
+  margin: 0px;
+}
+
+#heading-content .camp-date p{
+  font-weight: 500;
+}
+
 #heading-container .strip-bottom{
   background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
   width: 100%;
@@ -48,9 +64,12 @@ export default {
   z-index: 99;
 }
 
+#heading-container .camp-date{
+  margin-top: 20px;
+}
+
 span {
   font-size: 1.3em;
-  font-weight: 200;
   color: #fff;
 }
 
@@ -61,14 +80,13 @@ p {
 
 h2 {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 500;
 }
 
 h1 {
   color: #f9ba47;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 600;
-  margin-top: 1em;
 }
 </style>
