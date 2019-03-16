@@ -15,7 +15,7 @@
                             เปิดรับสมัคร
                         </div>
                         <div class="timeline-range">
-                            15 มีนาคม - 14 เมษายน
+                            15 มีนาคม - 16 เมษายน
                         </div>
                     </div>
                     <div class="col-md-3 col-6 timeline-block">
@@ -26,7 +26,7 @@
                             ประกาศผล
                         </div>
                         <div class="timeline-range">
-                            26 เมษายน
+                            28 เมษายน
                         </div>
                     </div>
                     <div class="col-md-3 col-6 timeline-block">
@@ -48,7 +48,7 @@
                             เปิดค่าย
                         </div>
                         <div class="timeline-range">
-                            33 พฤษภาคม
+                            30 พฤษภาคม - 2 มิถุนายน
                         </div>
                     </div>
                 </div>
