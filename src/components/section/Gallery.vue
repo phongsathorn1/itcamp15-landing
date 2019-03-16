@@ -1,18 +1,18 @@
 <template>
-  <section class="home-section" id="gallery">
-    <div class="container-fluid">
-      <h1 class="text-center">ภาพกิจกรรม</h1>
-      <div class="gallery-wrapper">
-        <lazy-component>
+  <lazy-component>
+    <section class="home-section" id="gallery">
+      <div class="container-fluid">
+        <h1 class="text-center">ภาพกิจกรรม</h1>
+        <div class="gallery-wrapper">
           <slick class="gallery-slider" ref="slick" :options="slickOptions">
             <div class="gallery-item" v-for="image in images" :key="image">
               <img :src="image" alt>
             </div>
           </slick>
-        </lazy-component>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </lazy-component>
 </template>
 
 <script>
