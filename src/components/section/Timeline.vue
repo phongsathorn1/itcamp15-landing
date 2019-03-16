@@ -7,7 +7,7 @@
             <span class="subhead">ตารางเวลาของค่ายไอทีแคมป์</span>
             <div class="timeline-wrapper">
                 <div class="row">
-                    <div class="col-md-3 col-6 timeline-block">
+                    <div class="col-md-3 timeline-block">
                         <div class="timeline-icon">
                             <img class="timeline-icon-img" src="@/assets/group-7.svg" />
                         </div>
@@ -18,7 +18,7 @@
                             15 มีนาคม - 16 เมษายน
                         </div>
                     </div>
-                    <div class="col-md-3 col-6 timeline-block">
+                    <div class="col-md-3 timeline-block">
                         <div class="timeline-icon">
                             <img class="timeline-icon-img" src="@/assets/group-6.svg" />
                         </div>
@@ -29,7 +29,7 @@
                             28 เมษายน
                         </div>
                     </div>
-                    <div class="col-md-3 col-6 timeline-block">
+                    <div class="col-md-3 timeline-block">
                         <div class="timeline-icon">
                             <img class="timeline-icon-img" src="@/assets/group-5.svg" />
                         </div>
@@ -40,7 +40,7 @@
                             26 เมษายน - 3 พฤษภาคม
                         </div>
                     </div>
-                    <div class="col-md-3 col-6 timeline-block">
+                    <div class="col-md-3 timeline-block">
                         <div class="timeline-icon">
                             <img class="timeline-icon-img" src="@/assets/group-4.svg" />
                         </div>

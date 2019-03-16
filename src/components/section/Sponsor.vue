@@ -2,23 +2,25 @@
   <div id="sponsor-container">
     <p>สนับสนุนโดย</p>
     <div class="sponsor-row">
-      <div class="sponsor-lv1"></div>
-      <div class="sponsor-lv1"></div>
-      <div class="sponsor-lv1"></div>
+      <div class="sponsor-lv1">
+        <img src="@/assets/sponsor/it.png" alt="คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" />
+      </div>
+      <!-- <div class="sponsor-lv1"></div>
+      <div class="sponsor-lv1"></div> -->
+    </div>
+    <!-- <div class="sponsor-row">
+      <div class="sponsor-lv2"></div>
+      <div class="sponsor-lv2"></div>
+      <div class="sponsor-lv2"></div>
+      <div class="sponsor-lv2"></div>
+      <div class="sponsor-lv2"></div>
     </div>
     <div class="sponsor-row">
       <div class="sponsor-lv2"></div>
       <div class="sponsor-lv2"></div>
       <div class="sponsor-lv2"></div>
       <div class="sponsor-lv2"></div>
-      <div class="sponsor-lv2"></div>
-    </div>
-    <div class="sponsor-row">
-      <div class="sponsor-lv2"></div>
-      <div class="sponsor-lv2"></div>
-      <div class="sponsor-lv2"></div>
-      <div class="sponsor-lv2"></div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -43,18 +45,21 @@ export default {
   margin-top: 5em;
 }
 
+.sponsor-row img{
+  display: block;
+  width: 100%;
+}
+
 .sponsor-lv1 {
   width: 131px;
   height: 131px;
   margin: 0 3em;
-  border: solid 3px #ffffff;
 }
 
 .sponsor-lv2 {
   width: 100px;
   height: 100px;
   margin: 0 2.5em;
-  border: solid 3px #ffffff;
 }
 
 p {
