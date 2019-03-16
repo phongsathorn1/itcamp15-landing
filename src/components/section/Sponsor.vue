@@ -3,10 +3,13 @@
     <p>สนับสนุนโดย</p>
     <div class="sponsor-row">
       <div class="sponsor-lv1">
-        <img src="@/assets/sponsor/it.png" alt="คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" />
+        <img
+          src="@/assets/sponsor/it.png"
+          alt="คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง"
+        >
       </div>
       <!-- <div class="sponsor-lv1"></div>
-      <div class="sponsor-lv1"></div> -->
+      <div class="sponsor-lv1"></div>-->
     </div>
     <!-- <div class="sponsor-row">
       <div class="sponsor-lv2"></div>
@@ -20,7 +23,7 @@
       <div class="sponsor-lv2"></div>
       <div class="sponsor-lv2"></div>
       <div class="sponsor-lv2"></div>
-    </div> -->
+    </div>-->
   </div>
 </template>
 
@@ -45,7 +48,7 @@ export default {
   margin-top: 20px;
 }
 
-.sponsor-row img{
+.sponsor-row img {
   display: block;
   width: 100%;
 }

@@ -7,9 +7,7 @@
       <div class="qa-wrapper">
         <ul class="qa-list">
           <li v-for="qa in qas" :key="qa.id">
-            <div class="qa-question">
-              {{qa.question}}
-            </div>
+            <div class="qa-question">{{qa.question}}</div>
             <div class="qa-answer">
               <span class="answer">ตอบ</span>&nbsp;
               <span v-html="qa.answer"></span>
@@ -120,12 +118,12 @@ export default {
   // text-align: center;
 }
 
-.qa-list .qa-question{
+.qa-list .qa-question {
   font-size: 1.1em;
   font-weight: 500;
 }
 
-#qa .qa-wrapper{
+#qa .qa-wrapper {
   padding: 50px 0px;
 }
 </style>

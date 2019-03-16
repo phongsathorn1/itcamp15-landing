@@ -127,13 +127,13 @@ export default {
 }
 
 @media (max-width: 840px) {
-  .gallery-wrapper{
+  .gallery-wrapper {
     width: 90%;
   }
 }
 
 @media (max-width: 1024px) {
-  .gallery-wrapper{
+  .gallery-wrapper {
     width: 90%;
   }
 }
