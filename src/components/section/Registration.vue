@@ -209,6 +209,7 @@ export default {
   justify-content: space-between;
   padding-top: 100px;
   padding-bottom: 50px;
+  overflow-x: scroll;
 }
 
 #register .register-block {
@@ -303,11 +304,14 @@ export default {
 }
 
 @media (max-width: 768px) {
-  #register .register-wrapper {
-    overflow-x: scroll;
-  }
   #register .register-block {
     padding: 0px 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #register .register-block {
+    padding: 0px 15px;
   }
 }
 </style>
