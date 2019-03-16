@@ -192,7 +192,6 @@ export default {
 #register .container {
   position: relative;
   z-index: 100;
-  min-height: 400px;
 }
 
 #register .register-wrapper {
