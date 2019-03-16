@@ -178,10 +178,6 @@ export default {
   color: #333333;
 }
 
-// #register .subhead{
-//   color: #1f1f1f;
-// }
-
 #register .strip-top {
   background: #ffffff;
   width: 100%;
@@ -200,7 +196,7 @@ export default {
 #register .register-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 30px;
   padding-bottom: 50px;
   overflow-x: scroll;
 }
