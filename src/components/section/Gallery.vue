@@ -104,6 +104,7 @@ export default {
 #gallery {
   background: #fbfbfb;
   padding: 100px 0px;
+  min-height: 400px;
 }
 
 #gallery h1 {
