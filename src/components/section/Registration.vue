@@ -9,7 +9,7 @@
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
-                <img src="@/assets/subcamp/app.png">
+                <img src="@/assets/camp/app.png">
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
-                <img src="@/assets/subcamp/data.png">
+                <img src="@/assets/camp/data.png">
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
-                <img src="@/assets/subcamp/game.png">
+                <img src="@/assets/camp/game.png">
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
-                <img src="@/assets/subcamp/iot.png">
+                <img src="@/assets/camp/iot.png">
               </div>
             </div>
           </div>
