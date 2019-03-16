@@ -47,12 +47,12 @@ export default {
         autoplaySpeed: 2000,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 840,
             settings: {
               arrows: false,
-              centerMode: true,
+              centerMode: false,
               centerPadding: '40px',
-              slidesToShow: 3
+              slidesToShow: 2
             }
           },
           {
@@ -126,13 +126,15 @@ export default {
   margin: 50px auto;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 840px) {
   .gallery-wrapper{
-    width: 100%;
+    width: 90%;
   }
 }
 
-.slick-prev:before, .slick-next:before{
-  color: #333333;
+@media (max-width: 1024px) {
+  .gallery-wrapper{
+    width: 90%;
+  }
 }
 </style>
