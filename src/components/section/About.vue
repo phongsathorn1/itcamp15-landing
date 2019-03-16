@@ -23,7 +23,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-#about{
+#about {
   min-height: calc(100vh - 100px);
   background-image: linear-gradient(to bottom, #17013c, #22002b);
   color: #ffffff;
@@ -31,26 +31,26 @@ export default {}
   padding-top: 50px;
 }
 
-#about .subhead{
+#about .subhead {
   color: #ffffff;
 }
 
-#about .container{
+#about .container {
   position: relative;
   padding-top: 150px;
   padding-bottom: 4vh;
 }
 
-#about .about-wrapper{
+#about .about-wrapper {
   padding: 50px 0px;
   width: 55%;
   margin: auto;
-  font-family: 'Sarabun', sans-serif;
+  font-family: "Sarabun", sans-serif;
   font-weight: 100;
   line-height: 44px;
 }
 
-.box-bg{
+.box-bg {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -58,7 +58,7 @@ export default {}
   padding: 30px 0px;
 }
 
-.box-bg-wrapper{
+.box-bg-wrapper {
   margin: auto;
   margin-top: 100px;
   width: 500px;
@@ -75,8 +75,8 @@ export default {}
 //   }
 // }
 
-@media (max-width: 768px){
-  #about .about-wrapper{
+@media (max-width: 768px) {
+  #about .about-wrapper {
     width: auto;
     padding-left: 20px;
     padding-right: 20px;

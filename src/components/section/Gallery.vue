@@ -13,12 +13,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#gallery{
+#gallery {
   background: #fbfbfb;
   padding: 100px 0px;
 }
 
-#gallery h1{
+#gallery h1 {
   color: #333333;
 }
 </style>

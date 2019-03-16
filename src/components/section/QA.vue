@@ -6,10 +6,8 @@
       <h1 class="text-center">คำถามที่พบบ่อย</h1>
       <div class="qa-wrapper">
         <ul class="qa-list">
-          <li v-for="qa in qas">
-            <div class="qa-question">
-              {{qa.question}}
-            </div>
+          <li v-for="qa in qas" :key="qa.question">
+            <div class="qa-question">{{qa.question}}</div>
             <div class="qa-answer">
               <span class="answer">ตอบ</span>&nbsp;
               <span v-html="qa.answer"></span>
@@ -65,11 +63,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#qa{
+#qa {
   padding: 100px 0px;
   background: #ebebeb;
 }
-#qa .strip-top{
+#qa .strip-top {
   background: #ebebeb;
   width: 100%;
   height: 50%;
@@ -79,7 +77,7 @@ export default {
   z-index: 99;
 }
 
-#qa .strip-bottom{
+#qa .strip-bottom {
   background: #ebebeb;
   width: 100%;
   height: 50%;
@@ -89,21 +87,21 @@ export default {
   z-index: 99;
 }
 
-#qa .container{
+#qa .container {
   position: relative;
   z-index: 100;
 }
 
-#qa .answer{
+#qa .answer {
   font-weight: 600;
 }
 
-.qa-list{
+.qa-list {
   padding: 0px;
   list-style: none;
 }
 
-.qa-list li{
+.qa-list li {
   padding: 0px;
   margin-bottom: 20px;
   // text-align: center;

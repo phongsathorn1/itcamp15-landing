@@ -42,19 +42,19 @@ export default {
   margin-bottom: 100px;
 }
 
-#heading-content .camp{
+#heading-content .camp {
   margin-top: 20px;
 }
 
-#heading-content .camp p{
+#heading-content .camp p {
   margin: 0px;
 }
 
-#heading-content .camp-date p{
+#heading-content .camp-date p {
   font-weight: 500;
 }
 
-#heading-container .strip-bottom{
+#heading-container .strip-bottom {
   background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
   width: 100%;
   height: 20%;
@@ -64,7 +64,7 @@ export default {
   z-index: 99;
 }
 
-#heading-container .camp-date{
+#heading-container .camp-date {
   margin-top: 20px;
 }
 
