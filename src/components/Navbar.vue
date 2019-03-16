@@ -25,8 +25,8 @@
       <div class="navbar-nav d-none d-sm-block">
         <a
           class="btn btn-register"
-          href="javascript:void(0)"
-          v-scroll-to="'#register'"
+          href="https://register.itcamp.in.th"
+          target="blank"
         >สมัครเข้าค่าย</a>
       </div>
     </div>
