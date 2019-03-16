@@ -215,6 +215,12 @@ export default {
   margin: 0px 20px;
   width: 100%;
   cursor: pointer;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+#register .register-block:hover {
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
 #register .register-icon-wrapper {
