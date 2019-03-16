@@ -1,7 +1,7 @@
 <template>
   <div class="camp-detail-box" :style="{ borderColor: color }">
     <div class="d-flex justify-content-start align-items-center">
-      <div class="col-2">
+      <div class="col-2 d-none d-sm-block">
         <div class="camp-detail-logo">
           <img :src="require(`@/assets/camp/${logo}`)" />
         </div>
