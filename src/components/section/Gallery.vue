@@ -42,6 +42,7 @@ export default {
       slickOptions: {
         centerMode: true,
         centerPadding: '20px',
+        lazyLoad: 'ondemand',
         slidesToShow: 3,
         autoplay: true,
         autoplaySpeed: 2000,
