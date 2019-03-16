@@ -25,7 +25,7 @@
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
-                <img src="../../assets/camp/network.png">
+                <img src="@/assets/camp/network.png">
               </div>
             </div>
           </div>
