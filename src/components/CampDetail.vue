@@ -1,30 +1,28 @@
 <template>
-  <lazy-component>
-    <div class="camp-detail-box" :style="{ borderColor: color }">
-      <div class="d-flex justify-content-start align-items-center">
-        <div class="col-2 d-none d-sm-block">
-          <div class="camp-detail-logo">
-            <img :src="require(`@/assets/camp/${logo}`)">
-          </div>
-        </div>
-        <div class="col-10">
-          <h2 :style="{ color: color }">{{campname}}</h2>
-          <a
-            class="btn btn-register"
-            :style="{ borderColor: color, color: color}"
-            :href="`https://register.itcamp.in.th/${id}`"
-          >สมัครค่าย {{campname}}</a>
+  <div class="camp-detail-box" :style="{ borderColor: color }">
+    <div class="d-flex justify-content-start align-items-center">
+      <div class="col-2 d-none d-sm-block">
+        <div class="camp-detail-logo">
+          <img :src="require(`@/assets/camp/${logo}`)">
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="inner-camp-detail-box">
-            <p v-html="detail"></p>
-          </div>
+      <div class="col-10">
+        <h2 :style="{ color: color }">{{campname}}</h2>
+        <a
+          class="btn btn-register"
+          :style="{ borderColor: color, color: color}"
+          :href="`https://register.itcamp.in.th/${id}`"
+        >สมัครค่าย {{campname}}</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="inner-camp-detail-box">
+          <p v-html="detail"></p>
         </div>
       </div>
     </div>
-  </lazy-component>
+  </div>
 </template>
 
 <script>

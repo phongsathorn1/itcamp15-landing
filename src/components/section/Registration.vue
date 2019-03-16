@@ -1,103 +1,105 @@
 <template>
-  <section class="home-section" id="register">
-    <div class="strip-top"></div>
-    <div class="container">
-      <h1 class="text-center">เลือกสาขาที่คุณต้องการ</h1>
-      <span class="subhead text-center">คลิกค่ายที่ต้องการเพื่อดูรายละเอียดและสมัคร</span>
-      <div class="register-wrapper">
-        <div class="register-block app-camp" @click="show('app')">
-          <div class="register-icon-wrapper">
-            <div class="register-icon">
-              <div class="inner-register-icon">
-                <img src="@/assets/camp/app.png">
+  <lazy-component>
+    <section class="home-section" id="register">
+      <div class="strip-top"></div>
+      <div class="container">
+        <h1 class="text-center">เลือกสาขาที่คุณต้องการ</h1>
+        <span class="subhead text-center">คลิกค่ายที่ต้องการเพื่อดูรายละเอียดและสมัคร</span>
+        <div class="register-wrapper">
+          <div class="register-block app-camp" @click="show('app')">
+            <div class="register-icon-wrapper">
+              <div class="register-icon">
+                <div class="inner-register-icon">
+                  <img src="@/assets/camp/app.png">
+                </div>
+              </div>
+            </div>
+            <div class="register-detail">
+              <div class="register-title">Appermort</div>
+              <div class="register-status" v-if="showStatus">
+                สมัครแล้ว
+                <b>30 คน</b>
               </div>
             </div>
           </div>
-          <div class="register-detail">
-            <div class="register-title">Appermort</div>
-            <div class="register-status" v-if="showStatus">
-              สมัครแล้ว
-              <b>30 คน</b>
+          <div class="register-block network-camp" @click="show('network')">
+            <div class="register-icon-wrapper">
+              <div class="register-icon">
+                <div class="inner-register-icon">
+                  <img src="@/assets/camp/network.png">
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="register-block network-camp" @click="show('network')">
-          <div class="register-icon-wrapper">
-            <div class="register-icon">
-              <div class="inner-register-icon">
-                <img src="@/assets/camp/network.png">
+            <div class="register-detail">
+              <div class="register-title">Netherine</div>
+              <div class="register-status" v-if="showStatus">
+                สมัครแล้ว
+                <b>30 คน</b>
               </div>
             </div>
           </div>
-          <div class="register-detail">
-            <div class="register-title">Netherine</div>
-            <div class="register-status" v-if="showStatus">
-              สมัครแล้ว
-              <b>30 คน</b>
+          <div class="register-block data-camp" @click="show('data')">
+            <div class="register-icon-wrapper">
+              <div class="register-icon">
+                <div class="inner-register-icon">
+                  <img src="@/assets/camp/data.png">
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="register-block data-camp" @click="show('data')">
-          <div class="register-icon-wrapper">
-            <div class="register-icon">
-              <div class="inner-register-icon">
-                <img src="@/assets/camp/data.png">
+            <div class="register-detail">
+              <div class="register-title">Dragota</div>
+              <div class="register-status" v-if="showStatus">
+                >
+                สมัครแล้ว
+                <b>0 คน</b>
               </div>
             </div>
           </div>
-          <div class="register-detail">
-            <div class="register-title">Dragota</div>
-            <div class="register-status" v-if="showStatus">
-              >
-              สมัครแล้ว
-              <b>0 คน</b>
+          <div class="register-block game-camp" @click="show('game')">
+            <div class="register-icon-wrapper">
+              <div class="register-icon">
+                <div class="inner-register-icon">
+                  <img src="@/assets/camp/game.png">
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="register-block game-camp" @click="show('game')">
-          <div class="register-icon-wrapper">
-            <div class="register-icon">
-              <div class="inner-register-icon">
-                <img src="@/assets/camp/game.png">
+            <div class="register-detail">
+              <div class="register-title">GrindelGame</div>
+              <div class="register-status" v-if="showStatus">
+                >
+                สมัครแล้ว
+                <b>0 คน</b>
               </div>
             </div>
           </div>
-          <div class="register-detail">
-            <div class="register-title">GrindelGame</div>
-            <div class="register-status" v-if="showStatus">
-              >
-              สมัครแล้ว
-              <b>0 คน</b>
+          <div class="register-block iot-camp" @click="show('iot')">
+            <div class="register-icon-wrapper">
+              <div class="register-icon">
+                <div class="inner-register-icon">
+                  <img src="@/assets/camp/iot.png">
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="register-block iot-camp" @click="show('iot')">
-          <div class="register-icon-wrapper">
-            <div class="register-icon">
-              <div class="inner-register-icon">
-                <img src="@/assets/camp/iot.png">
+            <div class="register-detail">
+              <div class="register-title">Dobby of Things</div>
+              <div class="register-status" v-if="showStatus">
+                สมัครแล้ว
+                <b>0 คน</b>
               </div>
             </div>
           </div>
-          <div class="register-detail">
-            <div class="register-title">Dobby of Things</div>
-            <div class="register-status" v-if="showStatus">
-              สมัครแล้ว
-              <b>0 คน</b>
-            </div>
-          </div>
         </div>
+        <camp-detail
+          :logo="camp.logo"
+          :campname="camp.name"
+          :detail="camp.detail"
+          :color="camp.color"
+          :id="camp.id"
+          v-if="showCampdetail"
+        ></camp-detail>
       </div>
-      <camp-detail
-        :logo="camp.logo"
-        :campname="camp.name"
-        :detail="camp.detail"
-        :color="camp.color"
-        :id="camp.id"
-        v-if="showCampdetail"
-      ></camp-detail>
-    </div>
-  </section>
+    </section>
+  </lazy-component>
 </template>
 
 <script>
