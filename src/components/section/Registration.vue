@@ -17,9 +17,6 @@
               <div class="register-title">
                 Appermort
               </div>
-              <div class="register-subtitle">
-                พัฒนาแอพพลิเคชั่น
-              </div>
               <div class="register-status" v-if="showStatus">
                 สมัครแล้ว <b>30 คน</b>
               </div>
@@ -35,7 +32,6 @@
           </div>
           <div class="register-detail">
             <div class="register-title">Netherine</div>
-            <div class="register-subtitle">เน็ตเวิร์ค</div>
             <div class="register-status" v-if="showStatus">
               สมัครแล้ว
               <b>30 คน</b>
@@ -52,7 +48,6 @@
           </div>
           <div class="register-detail">
             <div class="register-title">Dragota</div>
-            <div class="register-subtitle">วิเคราะห์ข้อมูล</div>
             <div class="register-status" v-if="showStatus">
               >
               สมัครแล้ว
@@ -70,7 +65,6 @@
           </div>
           <div class="register-detail">
             <div class="register-title">GrindelGame</div>
-            <div class="register-subtitle">พัฒนาเกมส์</div>
             <div class="register-status" v-if="showStatus">
               >
               สมัครแล้ว
@@ -88,7 +82,6 @@
           </div>
           <div class="register-detail">
             <div class="register-title">Dobby of Things</div>
-            <div class="register-subtitle">อินเตอร์เน็ตแห่งสรรพสิ่ง</div>
             <div class="register-status" v-if="showStatus">
               สมัครแล้ว
               <b>0 คน</b>
