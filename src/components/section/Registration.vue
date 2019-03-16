@@ -41,7 +41,7 @@
         </div>
         <div class="register-block data-camp">
           <div class="register-icon-wrapper">
-            <div class="register-icon">s
+            <div class="register-icon">
               <div class="temp-register-icon">
                 <img src="../../assets/camp/data.png">
               </div>
