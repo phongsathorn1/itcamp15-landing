@@ -25,7 +25,7 @@
           <div class="col-md-3 col-sm-6 timeline-block">
             <div class="temp-block"></div>
             <div class="timeline-title">เปิดค่าย</div>
-            <div class="timeline-range">33 พฤษภาคม</div>
+            <div class="timeline-range">31 พฤษภาคม - 2 มิถุนายน 2562</div>
           </div>
         </div>
       </div>
