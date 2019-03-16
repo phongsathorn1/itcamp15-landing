@@ -42,7 +42,7 @@ export default {
 .sponsor-row {
   display: flex;
   justify-content: center;
-  margin-top: 5em;
+  margin-top: 20px;
 }
 
 .sponsor-row img{
