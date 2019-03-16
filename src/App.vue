@@ -44,32 +44,32 @@ body {
   overflow-x: hidden;
 }
 
-.home-section h1{
+.home-section h1 {
   color: #eea113;
   font-size: 2em;
 }
 
-.home-section{
+.home-section {
   padding: 25px 0px;
   font-size: 1.2em;
   position: relative;
 }
 
-.home-section .subhead{
+.home-section .subhead {
   display: block;
 }
 
-.ractangle-top-1{
-  background: #FFF;
+.ractangle-top-1 {
+  background: #fff;
   height: 100px;
 }
 
-.subhead{
+.subhead {
   color: #6d6d6d;
   font-size: 1.2em;
 }
 
-b{
+b {
   font-weight: 600;
 }
 </style>

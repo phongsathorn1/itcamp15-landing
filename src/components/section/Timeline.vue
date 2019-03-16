@@ -54,7 +54,9 @@
                 </div>
             </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -63,52 +65,52 @@ export default {
 </script>
 
 <style lang="scss">
-#timeline{
-    background: #ebebeb;
+#timeline {
+  background: #ebebeb;
 }
 
-#timeline .strip-top{
-    background: #ebebeb;
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    top: -45px;
-    transform: skewY(3deg);
-    z-index: 99;
+#timeline .strip-top {
+  background: #ebebeb;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: -45px;
+  transform: skewY(3deg);
+  z-index: 99;
 }
 
-#timeline .strip-bottom{
-    background: #ebebeb;
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    bottom: -45px;
-    transform: skewY(-3deg);
-    z-index: 99;
+#timeline .strip-bottom {
+  background: #ebebeb;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: -45px;
+  transform: skewY(-3deg);
+  z-index: 99;
 }
 
-#timeline .container{
-    position: relative;
-    z-index: 100;
+#timeline .container {
+  position: relative;
+  z-index: 100;
 }
 
-#timeline .timeline-wrapper{
-    padding: 50px 0px;
-    text-align: center;
+#timeline .timeline-wrapper {
+  padding: 50px 0px;
+  text-align: center;
 }
-#timeline .timeline-wrapper .timeline-title{
-    font-size: 1.5em;
-    color: #eea113;
-    margin-top: 50px;
-}
-
-#timeline .timeline-wrapper .timeline-range{
-    font-size: 1em;
-    color: #242424
+#timeline .timeline-wrapper .timeline-title {
+  font-size: 1.5em;
+  color: #eea113;
+  margin-top: 50px;
 }
 
-#timeline .timeline-block{
-    margin-bottom: 30px;
+#timeline .timeline-wrapper .timeline-range {
+  font-size: 1em;
+  color: #242424;
+}
+
+#timeline .timeline-block {
+  margin-bottom: 30px;
 }
 
 .timeline-icon{

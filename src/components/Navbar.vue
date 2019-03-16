@@ -4,14 +4,21 @@
       <a class="navbar-brand mr-0 mr-md-2" href="#">ITCAMP15</a>
       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button> -->
-
+      </button>-->
       <div class="navbar-nav-scroll" id="navbar">
         <ul class="navbar-nav mr-auto ml-auto mx-auto flex-row">
-          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" v-scroll-to="'#about'">เนื้อเรื่อง</a></li>
-          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" v-scroll-to="'#register'">แคมป์ย่อย</a></li>
-          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" v-scroll-to="'#timeline'">กำหนดการ</a></li>
-          <li class="nav-item"><a class="nav-link" href="javascript:void(0)" v-scroll-to="'#qa'">คำถามที่พบบ่อย</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" v-scroll-to="'#about'">เนื้อเรื่อง</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" v-scroll-to="'#register'">แคมป์ย่อย</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" v-scroll-to="'#timeline'">กำหนดการ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" v-scroll-to="'#qa'">คำถามที่พบบ่อย</a>
+          </li>
         </ul>
       </div>
 
@@ -23,7 +30,7 @@
 </template>
 
 <style lang="scss" scoped>
-.main-navbar{
+.main-navbar {
   position: absolute;
   width: 100%;
   z-index: 1999;
@@ -32,57 +39,58 @@
   font-size: 1.3em;
 }
 
-.main-navbar a{
+.main-navbar a {
   color: #ffffff;
   text-decoration: none;
 }
 
 $navlink-padding: 30px;
-.main-navbar .nav-link{
+.main-navbar .nav-link {
   padding-left: $navlink-padding;
   padding-right: $navlink-padding;
   font-weight: 100;
 }
 
-.main-navbar .nav-item{
+.main-navbar .nav-item {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.main-navbar .nav-item{
+.main-navbar .nav-item {
   transition: color 0.3s ease-in-out;
 }
 
-.main-navbar .nav-link:hover{
+.main-navbar .nav-link:hover {
   color: #fad961;
 }
 
-.main-navbar .nav-item:first-child{
+.main-navbar .nav-item:first-child {
   border-left: none;
 }
 
-.btn-register{
+.btn-register {
   border-radius: 4px;
   border: 1px solid #f76b1c;
   background-origin: border-box;
   background-clip: content-box, border-box;
-  border-image: linear-gradient(243deg, #fad961, #f76b1c), radial-gradient(circle at top left, white, white);
+  border-image: linear-gradient(243deg, #fad961, #f76b1c),
+    radial-gradient(circle at top left, white, white);
   font-size: 1em;
 }
 
-.btn-register:hover{
+.btn-register:hover {
   background: linear-gradient(243deg, #fad961, #f76b1c);
   color: #000;
 }
 
-@media (max-width: 991.98px){
+@media (max-width: 991.98px) {
   .main-navbar .navbar-nav-scroll {
     max-width: 100%;
     height: 2.5rem;
-    margin-top: .25rem;
+    margin-top: 0.25rem;
     overflow: hidden;
   }
 
-  .main-navbar .nav-link{
+  .main-navbar .nav-link {
     padding-left: 10px;
     padding-right: 10px;
   }

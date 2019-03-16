@@ -9,7 +9,7 @@
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
-                <img src="@/assets/subcamp/Group8.png">
+                <img src="@/assets/subcamp/app.png">
               </div>
             </div>
           </div>
@@ -29,19 +29,16 @@
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
-                <img src="@/assets/subcamp/Group4.png">
+                <img src="../../assets/camp/network.png">
               </div>
             </div>
           </div>
           <div class="register-detail">
-            <div class="register-title">
-              Netherine
-            </div>
-            <div class="register-subtitle">
-              เน็ตเวิร์ค
-            </div>
+            <div class="register-title">Netherine</div>
+            <div class="register-subtitle">เน็ตเวิร์ค</div>
             <div class="register-status" v-if="showStatus">
-              สมัครแล้ว <b>30 คน</b>
+              สมัครแล้ว
+              <b>30 คน</b>
             </div>
           </div>
         </div>
@@ -49,19 +46,17 @@
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
-                <img src="@/assets/subcamp/Group6.png">
+                <img src="@/assets/subcamp/data.png">
               </div>
             </div>
           </div>
           <div class="register-detail">
-            <div class="register-title">
-              Dragota
-            </div>
-            <div class="register-subtitle">
-              วิเคราะห์ข้อมูล
-            </div>
-            <div class="register-status" v-if="showStatus">>
-              สมัครแล้ว <b>30 คน</b>
+            <div class="register-title">Dragota</div>
+            <div class="register-subtitle">วิเคราะห์ข้อมูล</div>
+            <div class="register-status" v-if="showStatus">
+              >
+              สมัครแล้ว
+              <b>0 คน</b>
             </div>
           </div>
         </div>
@@ -69,19 +64,17 @@
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
-                <img src="@/assets/subcamp/Group5.png">
+                <img src="@/assets/subcamp/game.png">
               </div>
             </div>
           </div>
           <div class="register-detail">
-            <div class="register-title">
-              GrindelGame
-            </div>
-            <div class="register-subtitle">
-              พัฒนาเกมส์
-            </div>
-            <div class="register-status" v-if="showStatus">>
-              สมัครแล้ว <b>30 คน</b>
+            <div class="register-title">GrindelGame</div>
+            <div class="register-subtitle">พัฒนาเกมส์</div>
+            <div class="register-status" v-if="showStatus">
+              >
+              สมัครแล้ว
+              <b>0 คน</b>
             </div>
           </div>
         </div>
@@ -89,19 +82,16 @@
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
-                <img src="@/assets/subcamp/Group7.png">
+                <img src="@/assets/subcamp/iot.png">
               </div>
             </div>
           </div>
           <div class="register-detail">
-            <div class="register-title">
-              Dobby of Things
-            </div>
-            <div class="register-subtitle">
-              อินเตอร์เน็ตแห่งสรรพสิ่ง
-            </div>
+            <div class="register-title">Dobby of Things</div>
+            <div class="register-subtitle">อินเตอร์เน็ตแห่งสรรพสิ่ง</div>
             <div class="register-status" v-if="showStatus">
-              สมัครแล้ว <b>30 คน</b>
+              สมัครแล้ว
+              <b>0 คน</b>
             </div>
           </div>
         </div>
@@ -121,12 +111,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#register{
+#register {
   padding-top: 80px;
   padding-bottom: 150px;
 }
 
-#register h1{
+#register h1 {
   color: #333333;
 }
 
@@ -134,7 +124,7 @@ export default {
 //   color: #1f1f1f;
 // }
 
-#register .strip-top{
+#register .strip-top {
   background: #ffffff;
   width: 100%;
   height: 50%;
@@ -144,24 +134,24 @@ export default {
   z-index: 99;
 }
 
-#register .container{
+#register .container {
   position: relative;
   z-index: 100;
 }
 
-#register .register-wrapper{
+#register .register-wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
   padding-bottom: 50px;
 }
 
-#register .register-block{
+#register .register-block {
   margin: 0px 20px;
   width: 100%;
 }
 
-#register .register-icon-wrapper{
+#register .register-icon-wrapper {
   position: relative;
   transform: rotate(45deg);
   height: 120px;
@@ -194,13 +184,13 @@ export default {
   padding: 5px;
 }
 
-#register .register-detail{
+#register .register-detail {
   margin-top: 50px;
   text-align: center;
 }
 
 #register .register-detail .register-title,
-#register .register-detail b{
+#register .register-detail b {
   font-weight: 600;
 }
 
@@ -224,6 +214,10 @@ export default {
   color: #f5a623;
 }
 
+#register .iot-camp .register-title{
+  color: #f5a623;
+}
+
 #register .inner-register-icon{
   height: 120px;
   width: 120px;
@@ -236,11 +230,11 @@ export default {
   width: 100%;
 }
 
-@media (max-width: 768px){
-  #register .register-wrapper{
+@media (max-width: 768px) {
+  #register .register-wrapper {
     overflow-x: scroll;
   }
-  #register .register-block{
+  #register .register-block {
     padding: 0px 25px;
   }
 }
