@@ -25,7 +25,9 @@
         <div class="register-block network-camp">
           <div class="register-icon-wrapper">
             <div class="register-icon">
-              <div class="temp-register-icon"></div>
+              <div class="temp-register-icon">
+                <img src="../../assets/camp/network.png">
+              </div>
             </div>
           </div>
           <div class="register-detail">
@@ -40,7 +42,9 @@
         <div class="register-block data-camp">
           <div class="register-icon-wrapper">
             <div class="register-icon">s
-              <div class="temp-register-icon"></div>
+              <div class="temp-register-icon">
+                <img src="../../assets/camp/data.png">
+              </div>
             </div>
           </div>
           <div class="register-detail">
@@ -56,7 +60,9 @@
         <div class="register-block game-camp">
           <div class="register-icon-wrapper">
             <div class="register-icon">
-              <div class="temp-register-icon"></div>
+              <div class="temp-register-icon">
+                <img src="../../assets/camp/game.png">
+              </div>
             </div>
           </div>
           <div class="register-detail">
@@ -72,7 +78,9 @@
         <div class="register-block iot-camp">
           <div class="register-icon-wrapper">
             <div class="register-icon">
-              <div class="temp-register-icon"></div>
+              <div class="temp-register-icon">
+                <img src="../../assets/camp/iot.png">
+              </div>
             </div>
           </div>
           <div class="register-detail">
