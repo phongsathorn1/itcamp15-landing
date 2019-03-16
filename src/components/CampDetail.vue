@@ -14,7 +14,7 @@
     <div class="row">
       <div class="col-12">
         <div class="inner-camp-detail-box">
-          <p>{{detail}}</p>
+          <p v-html="detail"></p>
         </div>
       </div>
     </div>
