@@ -155,14 +155,12 @@ export default {
   },
   methods: {
     show (camp) {
-      console.log('click')
       this.showCampdetail = true
       this.selected = camp
     }
   },
   computed: {
     camp () {
-      console.log(this.camps.filter(x => x.id === this.selected)[0])
       return this.camps.filter(x => x.id === this.selected)[0]
     }
   }
