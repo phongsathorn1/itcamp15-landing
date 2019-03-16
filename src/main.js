@@ -19,7 +19,9 @@ Vue.use(VueScrollTo, {
   y: true
 })
 
-Vue.use(VueLazyload)
+Vue.use(VueLazyload, {
+  lazyComponent: true
+})
 
 new Vue({
   render: h => h(App)
