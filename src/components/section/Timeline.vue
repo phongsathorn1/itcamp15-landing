@@ -1,32 +1,58 @@
 <template>
-  <section class="home-section" id="timeline">
-    <div class="strip-top"></div>
-    <div class="strip-bottom"></div>
-    <div class="container">
-      <h1>กำหนดการ</h1>
-      <span class="subhead">ตารางเวลาของค่ายไอทีแคมป์</span>
-      <div class="timeline-wrapper">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 timeline-block">
-            <div class="temp-block"></div>
-            <div class="timeline-title">เปิดรับสมัคร</div>
-            <div class="timeline-range">15 มีนาคม - 14 เมษายน</div>
-          </div>
-          <div class="col-md-3 col-sm-6 timeline-block">
-            <div class="temp-block"></div>
-            <div class="timeline-title">ประกาศผล</div>
-            <div class="timeline-range">26 เมษายน</div>
-          </div>
-          <div class="col-md-3 col-sm-6 timeline-block">
-            <div class="temp-block"></div>
-            <div class="timeline-title">ยืนยันสิทธิ์</div>
-            <div class="timeline-range">26 เมษายน - 3 พฤษภาคม</div>
-          </div>
-          <div class="col-md-3 col-sm-6 timeline-block">
-            <div class="temp-block"></div>
-            <div class="timeline-title">เปิดค่าย</div>
-            <div class="timeline-range">31 พฤษภาคม - 2 มิถุนายน 2562</div>
-          </div>
+    <section class="home-section" id="timeline">
+        <div class="strip-top"></div>
+        <div class="strip-bottom"></div>
+        <div class="container">
+            <h1>กำหนดการ</h1>
+            <span class="subhead">ตารางเวลาของค่ายไอทีแคมป์</span>
+            <div class="timeline-wrapper">
+                <div class="row">
+                    <div class="col-md-3 col-6 timeline-block">
+                        <div class="timeline-icon">
+                            <img class="timeline-icon-img" src="@/assets/group-7.svg" />
+                        </div>
+                        <div class="timeline-title">
+                            เปิดรับสมัคร
+                        </div>
+                        <div class="timeline-range">
+                            15 มีนาคม - 14 เมษายน
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 timeline-block">
+                        <div class="timeline-icon">
+                            <img class="timeline-icon-img" src="@/assets/group-6.svg" />
+                        </div>
+                        <div class="timeline-title">
+                            ประกาศผล
+                        </div>
+                        <div class="timeline-range">
+                            26 เมษายน
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 timeline-block">
+                        <div class="timeline-icon">
+                            <img class="timeline-icon-img" src="@/assets/group-5.svg" />
+                        </div>
+                        <div class="timeline-title">
+                            ยืนยันสิทธิ์
+                        </div>
+                        <div class="timeline-range">
+                            26 เมษายน - 3 พฤษภาคม
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 timeline-block">
+                        <div class="timeline-icon">
+                            <img class="timeline-icon-img" src="@/assets/group-4.svg" />
+                        </div>
+                        <div class="timeline-title">
+                            เปิดค่าย
+                        </div>
+                        <div class="timeline-range">
+                            33 พฤษภาคม
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
@@ -87,9 +113,18 @@ export default {
   margin-bottom: 30px;
 }
 
-.temp-block {
-  height: 200px;
-  width: 100%;
-  background: #242424;
+.timeline-icon{
+    height: 150px;
+    width: 150px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+
+.timeline-icon-img{
+    transform: rotate(-45deg);
+    display: block;
+    margin: auto;
 }
 </style>

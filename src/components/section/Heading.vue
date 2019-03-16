@@ -13,7 +13,7 @@
         </div>
       </div>
     </div>
-    <Sponsor/>
+    <!-- <Sponsor/> -->
     <div class="strip-bottom"></div>
   </div>
 </template>

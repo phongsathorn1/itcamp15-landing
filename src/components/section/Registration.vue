@@ -8,24 +8,27 @@
         <div class="register-block app-camp">
           <div class="register-icon-wrapper">
             <div class="register-icon">
-              <div class="temp-register-icon">
-                <img src="../../assets/camp/app.png">
+              <div class="inner-register-icon">
+                <img src="@/assets/subcamp/app.png">
               </div>
             </div>
           </div>
           <div class="register-detail">
-            <div class="register-title">Appermort</div>
-            <div class="register-subtitle">พัฒนาแอปพลิเคชั่น</div>
-            <div class="register-status" v-if="showStatus">
-              สมัครแล้ว
-              <b>0 คน</b>
-            </div>
+              <div class="register-title">
+                Appermort
+              </div>
+              <div class="register-subtitle">
+                พัฒนาแอพพลิเคชั่น
+              </div>
+              <div class="register-status" v-if="showStatus">
+                สมัครแล้ว <b>30 คน</b>
+              </div>
           </div>
         </div>
         <div class="register-block network-camp">
           <div class="register-icon-wrapper">
             <div class="register-icon">
-              <div class="temp-register-icon">
+              <div class="inner-register-icon">
                 <img src="../../assets/camp/network.png">
               </div>
             </div>
@@ -42,8 +45,8 @@
         <div class="register-block data-camp">
           <div class="register-icon-wrapper">
             <div class="register-icon">
-              <div class="temp-register-icon">
-                <img src="../../assets/camp/data.png">
+              <div class="inner-register-icon">
+                <img src="@/assets/subcamp/data.png">
               </div>
             </div>
           </div>
@@ -60,8 +63,8 @@
         <div class="register-block game-camp">
           <div class="register-icon-wrapper">
             <div class="register-icon">
-              <div class="temp-register-icon">
-                <img src="../../assets/camp/game.png">
+              <div class="inner-register-icon">
+                <img src="@/assets/subcamp/game.png">
               </div>
             </div>
           </div>
@@ -78,8 +81,8 @@
         <div class="register-block iot-camp">
           <div class="register-icon-wrapper">
             <div class="register-icon">
-              <div class="temp-register-icon">
-                <img src="../../assets/camp/iot.png">
+              <div class="inner-register-icon">
+                <img src="@/assets/subcamp/iot.png">
               </div>
             </div>
           </div>
@@ -156,28 +159,28 @@ export default {
   margin: auto;
 }
 
-#register .app-camp .register-icon-wrapper {
-  border: 2px solid #9013fe;
-  padding: 5px;
-}
-
-#register .network-camp .register-icon-wrapper {
-  border: 2px solid #f5a623;
-  padding: 5px;
-}
-
-#register .data-camp .register-icon-wrapper {
+#register .app-camp .register-icon-wrapper{
   border: 2px solid #1fb4ec;
   padding: 5px;
 }
 
-#register .game-camp .register-icon-wrapper {
+#register .network-camp .register-icon-wrapper{
+  border: 2px solid #d61732;
+  padding: 5px;
+}
+
+#register .data-camp .register-icon-wrapper{
+  border: 2px solid #9013fe;
+  padding: 5px;
+}
+
+#register .game-camp .register-icon-wrapper{
   border: 2px solid #6c980d;
   padding: 5px;
 }
 
-#register .iot-camp .register-icon-wrapper {
-  border: 2px solid #d61732;
+#register .iot-camp .register-icon-wrapper{
+  border: 2px solid #f5a623;
   padding: 5px;
 }
 
@@ -191,38 +194,40 @@ export default {
   font-weight: 600;
 }
 
-#register .app-camp .register-title {
-  color: #9013fe;
-}
-
-#register .network-camp .register-title {
-  color: #f5a623;
-}
-
-#register .data-camp .register-title {
+#register .app-camp .register-title{
   color: #1fb4ec;
 }
 
-#register .game-camp .register-title {
-  color: #6c980d;
-}
-
-#register .iot-camp .register-title {
+#register .network-camp .register-title{
   color: #d61732;
 }
 
-#register .temp-register-icon {
-  display: flex;
+#register .data-camp .register-title{
+  color: #9013fe;
+}
+
+#register .game-camp .register-title{
+  color: #6c980d;
+}
+
+#register .iot-camp .register-title{
+  color: #f5a623;
+}
+
+#register .iot-camp .register-title{
+  color: #f5a623;
+}
+
+#register .inner-register-icon{
   height: 120px;
   width: 120px;
   transform: rotate(-45deg);
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
+}
 
-  img {
-    width: 100%;
-    height: auto;
-  }
+#register .inner-register-icon img{
+  display: block;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
