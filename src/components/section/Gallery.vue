@@ -43,6 +43,8 @@ export default {
         centerMode: true,
         centerPadding: '20px',
         slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
           {
             breakpoint: 768,
@@ -57,8 +59,8 @@ export default {
             breakpoint: 480,
             settings: {
               arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
+              centerMode: false,
+              // centerPadding: '40px',
               slidesToShow: 1
             }
           }
@@ -120,7 +122,14 @@ export default {
 }
 
 .gallery-wrapper {
-  padding: 50px 150px;
+  width: 80%;
+  margin: 50px auto;
+}
+
+@media (max-width: 1024px) {
+  .gallery-wrapper{
+    width: 100%;
+  }
 }
 
 .slick-prev:before, .slick-next:before{

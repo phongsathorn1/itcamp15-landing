@@ -74,7 +74,7 @@ export default {
 
 <style lang="scss" scoped>
 #qa {
-  padding: 100px 0px;
+  padding: 50px 0px;
   background: #ebebeb;
 }
 #qa .strip-top {
