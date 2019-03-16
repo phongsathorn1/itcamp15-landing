@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueScrollTo from 'vue-scrollto'
+import VueLazyload from 'vue-lazyload'
 import App from './App.vue'
 
 Vue.config.productionTip = false
@@ -17,6 +18,8 @@ Vue.use(VueScrollTo, {
   x: false,
   y: true
 })
+
+Vue.use(VueLazyload)
 
 new Vue({
   render: h => h(App)
