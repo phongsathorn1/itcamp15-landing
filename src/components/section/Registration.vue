@@ -5,7 +5,7 @@
       <h1 class="text-center">เลือกสาขาที่คุณต้องการ</h1>
       <span class="subhead text-center">คลิกค่ายที่ต้องการเพื่อดูรายละเอียดและสมัคร</span>
       <div class="register-wrapper">
-        <div class="register-block app-camp">
+        <div class="register-block app-camp" @click="show('app')">
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
@@ -25,7 +25,7 @@
               </div>
           </div>
         </div>
-        <div class="register-block network-camp">
+        <div class="register-block network-camp" @click="show('network')">
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
@@ -42,7 +42,7 @@
             </div>
           </div>
         </div>
-        <div class="register-block data-camp">
+        <div class="register-block data-camp" @click="show('data')">
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
@@ -60,7 +60,7 @@
             </div>
           </div>
         </div>
-        <div class="register-block game-camp">
+        <div class="register-block game-camp" @click="show('game')">
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
@@ -78,7 +78,7 @@
             </div>
           </div>
         </div>
-        <div class="register-block iot-camp">
+        <div class="register-block iot-camp" @click="show('iot')">
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
@@ -96,15 +96,80 @@
           </div>
         </div>
       </div>
+      <camp-detail 
+      :logo="camp.logo" 
+      :campname="camp.name" 
+      :detail="camp.detail" 
+      :color="camp.color" 
+      :id="camp.id" 
+      v-if="showCampdetail">
+      </camp-detail>
     </div>
   </section>
 </template>
 
 <script>
+import CampDetail from '@/components/CampDetail.vue'
+
 export default {
+  components: {
+    CampDetail
+  },
   data () {
     return {
+      camps:[
+        {
+          id: 'app',
+          name: 'Appermort',
+          logo: 'app.png',
+          color: '#1fb4ec',
+          detail: 'Appermort จะพาคุณมารู้จักกับจอมวายร้ายที่คุณอาจยังไม่รู้ตัว ที่เป็นต้นเหตุหลักทำให้เหล่าผู้คน ติดมือถือกันจนงมงาย เราจะสอนศาสตร์มืดเหล่านี้ให้คุณ นำไปเผยแพร่และดึงดูดผู้คนที่เป็นเป้าหมายให้มาติดกับดัก App ของเรา จนต้องเปย์ตัว เปย์ใจ ให้กับ App ของคุณ มาสิ ตามพวกเรามาสิ แล้วคุณจะเป็นผู้สร้างโลกใบใหม่นี้ด้วยตัวคุณเอง ... ฮ่าๆๆ'
+        },
+        {
+          id: 'network',
+          name: 'Netherine',
+          logo: 'network.png',
+          color: '#d61732',
+          detail: 'เวทมนตร์แห่งการเชื่อมต่อที่ไม่มีสิ้นสุดจะนำพาให้เราได้มารู้จักกัน ใน Netherine จะพาน้อง ๆ ไปไขปริศนาของเทคโนโลยีการเชื่อมต่อระหว่างอุปกรณ์ จนเกิดขึ้นเป็นเครือข่าย อะไรทำให้เหล่าอุปกรณ์วิเศษเหล่านี้สามารถแลกเปลี่ยนข้อมูลกันได้ แต่ละอุปกรณ์รู้จักกันได้อย่างไร ที่นี่มีคำตอบ!!'
+        },
+        {
+          id: 'game',
+          name: 'GrindelGame',
+          logo: 'game.png',
+          color: '#6c980d',
+          detail: '"หากว่าเป็นผู้เล่นจนพอใจแล้ว ลองมาเป็นผู้สร้างดูไหม ?" น้องๆ จะได้เรียนรู้จากศาสตร์นี้ เกี่ยวกับการสร้างเกม รู้ว่าเกมหนึ่งเกมควรจะมีอะไรบ้าง และ วิธีที่จะถ่ายทอดจินตนาการของน้อง ๆ สู่เกมที่เราสามารถเล่นได้จริง ด้วยโปรแกรม Construct 2 ที่ใช้งานได้ง่ายเข้าใจไม่ยาก เพราะความสนุกไม่ได้มีแค่ตอนเล่นเกม มาเป็นส่วนหนึ่งในค่าย GrindelGame และสร้างสรรค์เกมไปด้วยกัน!'
+        },
+        {
+          id: 'data',
+          name: 'Dragota',
+          logo: 'data.png',
+          color: '#9013fe',
+          detail: 'พร้อมรึยังกับค่าย Dragota ศาสตร์ที่จะนำข้อมูลอันสุดแสนจะธรรมดาเปลี่ยนให้กลายเป็นการพยากรณ์อนาคตที่น่าเหลือเชื่อด้วยRapidminer ดั่งเวทย์มนต์ที่รังสรรค์สิ่งมหัศจรรย์ที่ไม่รู้จบ พี่ๆ พร้อมที่จะมอบความรู้ ความอบอุ่น และความสนุกให้แบบไม่อั้น แล้วน้องๆ จะรู้ว่าข้อมูลรอบตัวเรานั้นสามารถทำอะไรได้มากกว่ที่คิด!'
+        },
+        {
+          id: 'iot',
+          name: 'Dobby of Things',
+          logo: 'iot.png',
+          color: '#f5a623',
+          detail: '“เมื่ออินเตอร์เน็ตสามารถเข้าถึงสิ่งต่างๆที่มีอยู่รอบๆตัวเราจะดีเท่าไหนกัน หากเราสามารถเสกเวทมตร์ควบคุบเครื่องใช้ไฟฟ้าให้มันเป็นดั่งใจเราได้” ศาสตร์แห่ง Dobby of Things จะพาน้องๆพบเจอกับเวทมนตร์Arduino IDE, VS Code และอื่นๆ อีกมากมายที่จะช่วยให้เราสะดวกสบายมากยิ่งขึ้น ให้อินเทอร์เน็ตเปรียบเสมือน Dobby ประจําบ้านของน้องๆ'
+        }
+      ],
+      showCampdetail: false,
+      selected: '',
       showStatus: false
+    }
+  },
+  methods:{
+    show(camp){
+      console.log("click")
+      this.showCampdetail = true
+      this.selected = camp
+    }
+  },
+  computed:{
+    camp(){
+      console.log(this.camps.filter(x => x.id == this.selected)[0])
+      return this.camps.filter(x => x.id == this.selected)[0]
     }
   }
 }
@@ -149,6 +214,7 @@ export default {
 #register .register-block {
   margin: 0px 20px;
   width: 100%;
+  cursor: pointer;
 }
 
 #register .register-icon-wrapper {
