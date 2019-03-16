@@ -1,17 +1,18 @@
 <template>
-  <div id="sponsor-container">
-    <p>สนับสนุนโดย</p>
-    <div class="sponsor-row">
-      <div class="sponsor-lv1">
-        <img
-          src="@/assets/sponsor/it.png"
-          alt="คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง"
-        >
+  <lazy-component>
+    <div id="sponsor-container">
+      <p>สนับสนุนโดย</p>
+      <div class="sponsor-row">
+        <div class="sponsor-lv1">
+          <img
+            src="@/assets/sponsor/it.png"
+            alt="คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง"
+          >
+        </div>
+        <!-- <div class="sponsor-lv1"></div>
+        <div class="sponsor-lv1"></div>-->
       </div>
-      <!-- <div class="sponsor-lv1"></div>
-      <div class="sponsor-lv1"></div>-->
-    </div>
-    <!-- <div class="sponsor-row">
+      <!-- <div class="sponsor-row">
       <div class="sponsor-lv2"></div>
       <div class="sponsor-lv2"></div>
       <div class="sponsor-lv2"></div>
@@ -23,8 +24,9 @@
       <div class="sponsor-lv2"></div>
       <div class="sponsor-lv2"></div>
       <div class="sponsor-lv2"></div>
-    </div>-->
-  </div>
+      </div>-->
+    </div>
+  </lazy-component>
 </template>
 
 <script>
