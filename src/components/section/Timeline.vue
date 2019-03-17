@@ -26,7 +26,7 @@
               <img class="timeline-icon-img" src="@/assets/group-5.svg">
             </div>
             <div class="timeline-title">ยืนยันสิทธิ์</div>
-            <div class="timeline-range">26 เมษายน - 3 พฤษภาคม</div>
+            <div class="timeline-range">28 เมษายน - 3 พฤษภาคม</div>
           </div>
           <div class="col-md-3 timeline-block">
             <div class="timeline-icon">
