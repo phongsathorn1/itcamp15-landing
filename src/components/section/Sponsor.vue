@@ -31,10 +31,8 @@
       <div class="sponsor-lv2"></div>
       <div class="sponsor-lv2"></div>
       </div>-->
-    </div>
   </lazy-component>
 </template>
-
 <script>
 export default {
   name: 'Sponsor'

@@ -2,7 +2,7 @@
   <div id="heading-container">
     <div class="container">
       <div id="heading-content">
-        <img src="../../assets/logo.png" alt>
+        <img class="logo" src="../../assets/logo.svg" alt>
         <div class="camp">
           <h2>ไอทีแคมป์ ครั้งที่ 15</h2>
           <h1>Magic Academy</h1>
@@ -67,6 +67,16 @@ export default {
 
 #heading-container .camp-date {
   margin-top: 20px;
+}
+
+#heading-container .logo{
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  #heading-container .logo{
+    width: 160px;
+  }
 }
 
 span {
