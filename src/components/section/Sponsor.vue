@@ -5,6 +5,9 @@
       <div class="sponsor-lv1">
         <img src="@/assets/sponsor/it.png" alt="คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" />
       </div>
+      <div class="sponsor-lv1">
+        <img src="@/assets/sponsor/kmitl.svg" alt="คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" />
+      </div>
       <!-- <div class="sponsor-lv1"></div>
       <div class="sponsor-lv1"></div> -->
     </div>
@@ -53,7 +56,7 @@ export default {
 .sponsor-lv1 {
   width: 131px;
   height: 131px;
-  margin: 0 3em;
+  margin: 0 30px;
 }
 
 .sponsor-lv2 {
