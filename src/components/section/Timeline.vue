@@ -1,59 +1,43 @@
 <template>
-    <section class="home-section" id="timeline">
-        <div class="strip-top"></div>
-        <div class="strip-bottom"></div>
-        <div class="container">
-            <h1>กำหนดการ</h1>
-            <span class="subhead">ตารางเวลาของค่ายไอทีแคมป์</span>
-            <div class="timeline-wrapper">
-                <div class="row">
-                    <div class="col-md-3 timeline-block">
-                        <div class="timeline-icon">
-                            <img class="timeline-icon-img" src="@/assets/group-7.svg" />
-                        </div>
-                        <div class="timeline-title">
-                            เปิดรับสมัคร
-                        </div>
-                        <div class="timeline-range">
-                            15 มีนาคม - 16 เมษายน
-                        </div>
-                    </div>
-                    <div class="col-md-3 timeline-block">
-                        <div class="timeline-icon">
-                            <img class="timeline-icon-img" src="@/assets/group-6.svg" />
-                        </div>
-                        <div class="timeline-title">
-                            ประกาศผล
-                        </div>
-                        <div class="timeline-range">
-                            28 เมษายน
-                        </div>
-                    </div>
-                    <div class="col-md-3 timeline-block">
-                        <div class="timeline-icon">
-                            <img class="timeline-icon-img" src="@/assets/group-5.svg" />
-                        </div>
-                        <div class="timeline-title">
-                            ยืนยันสิทธิ์
-                        </div>
-                        <div class="timeline-range">
-                            26 เมษายน - 3 พฤษภาคม
-                        </div>
-                    </div>
-                    <div class="col-md-3 timeline-block">
-                        <div class="timeline-icon">
-                            <img class="timeline-icon-img" src="@/assets/group-4.svg" />
-                        </div>
-                        <div class="timeline-title">
-                            เปิดค่าย
-                        </div>
-                        <div class="timeline-range">
-                            30 พฤษภาคม - 2 มิถุนายน
-                        </div>
-                    </div>
-                </div>
+  <section class="home-section" id="timeline">
+    <div class="strip-top"></div>
+    <div class="strip-bottom"></div>
+    <div class="container">
+      <h1>กำหนดการ</h1>
+      <span class="subhead">ตารางเวลาของค่ายไอทีแคมป์</span>
+      <div class="timeline-wrapper">
+        <div class="row">
+          <div class="col-md-3 timeline-block">
+            <div class="timeline-icon">
+              <img class="timeline-icon-img" src="@/assets/group-7.svg">
             </div>
+            <div class="timeline-title">เปิดรับสมัคร</div>
+            <div class="timeline-range">15 มีนาคม - 16 เมษายน</div>
+          </div>
+          <div class="col-md-3 timeline-block">
+            <div class="timeline-icon">
+              <img class="timeline-icon-img" src="@/assets/group-6.svg">
+            </div>
+            <div class="timeline-title">ประกาศผล</div>
+            <div class="timeline-range">28 เมษายน</div>
+          </div>
+          <div class="col-md-3 timeline-block">
+            <div class="timeline-icon">
+              <img class="timeline-icon-img" src="@/assets/group-5.svg">
+            </div>
+            <div class="timeline-title">ยืนยันสิทธิ์</div>
+            <div class="timeline-range">26 เมษายน - 3 พฤษภาคม</div>
+          </div>
+          <div class="col-md-3 timeline-block">
+            <div class="timeline-icon">
+              <img class="timeline-icon-img" src="@/assets/group-4.svg">
+            </div>
+            <div class="timeline-title">เปิดค่าย</div>
+            <div class="timeline-range">30 พฤษภาคม - 2 มิถุนายน</div>
+          </div>
         </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -111,18 +95,18 @@ export default {
   margin-bottom: 30px;
 }
 
-.timeline-icon{
-    height: 150px;
-    width: 150px;
-    transform: rotate(45deg);
-    overflow: hidden;
-    text-align: center;
-    margin: auto;
+.timeline-icon {
+  height: 150px;
+  width: 150px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
 }
 
-.timeline-icon-img{
-    transform: rotate(-45deg);
-    display: block;
-    margin: auto;
+.timeline-icon-img {
+  transform: rotate(-45deg);
+  display: block;
+  margin: auto;
 }
 </style>

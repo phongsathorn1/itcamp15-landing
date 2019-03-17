@@ -32,6 +32,7 @@ export default {
   background-image: url(../../assets/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #000;
   width: 100%;
   position: relative;
   padding-top: 200px;

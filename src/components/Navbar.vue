@@ -23,7 +23,11 @@
       </div>
 
       <div class="navbar-nav d-none d-sm-block">
-        <a class="btn btn-register" href="javascript:void(0)">สมัครเข้าค่าย</a>
+        <a
+          class="btn btn-register"
+          href="javascript:void(0)"
+          v-scroll-to="'#register'"
+        >สมัครเข้าค่าย</a>
       </div>
     </div>
   </nav>

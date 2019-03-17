@@ -1,16 +1,18 @@
 <template>
-  <section class="home-section" id="gallery">
-    <div class="container-fluid">
-      <h1 class="text-center">ภาพกิจกรรม</h1>
-      <div class="gallery-wrapper">
-        <slick class="gallery-slider" ref="slick" :options="slickOptions">
-          <div class="gallery-item" v-for="image in images" :key="image">
-            <img :src="image" alt>
-          </div>
-        </slick>
+  <lazy-component>
+    <section class="home-section" id="gallery">
+      <div class="container-fluid">
+        <h1 class="text-center">ภาพกิจกรรม</h1>
+        <div class="gallery-wrapper">
+          <slick class="gallery-slider" ref="slick" :options="slickOptions">
+            <div class="gallery-item" v-for="image in images" :key="image">
+              <img :src="image" alt>
+            </div>
+          </slick>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </lazy-component>
 </template>
 
 <script>
@@ -43,6 +45,7 @@ export default {
         centerMode: true,
         centerPadding: '20px',
         slidesToShow: 3,
+        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
@@ -127,13 +130,13 @@ export default {
 }
 
 @media (max-width: 840px) {
-  .gallery-wrapper{
+  .gallery-wrapper {
     width: 90%;
   }
 }
 
 @media (max-width: 1024px) {
-  .gallery-wrapper{
+  .gallery-wrapper {
     width: 90%;
   }
 }

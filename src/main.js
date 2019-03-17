@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import VueScrollTo from 'vue-scrollto'
+import VueLazyload from 'vue-lazyload'
 import App from './App.vue'
 
 Vue.config.productionTip = false
+
 Vue.use(VueScrollTo, {
   container: 'body',
   duration: 800,
@@ -15,6 +17,10 @@ Vue.use(VueScrollTo, {
   onCancel: false,
   x: false,
   y: true
+})
+
+Vue.use(VueLazyload, {
+  lazyComponent: true
 })
 
 new Vue({

@@ -14,19 +14,18 @@
             </div>
           </div>
           <div class="register-detail">
-              <div class="register-title">
-                Appermort
-              </div>
-              <div class="register-status" v-if="showStatus">
-                สมัครแล้ว <b>30 คน</b>
-              </div>
+            <div class="register-title">Appermort</div>
+            <div class="register-status" v-if="showStatus">
+              สมัครแล้ว
+              <b>30 คน</b>
+            </div>
           </div>
         </div>
         <div class="register-block network-camp" @click="show('network')">
           <div class="register-icon-wrapper">
             <div class="register-icon">
               <div class="inner-register-icon">
-                <img src="../../assets/camp/network.png">
+                <img src="@/assets/camp/network.png">
               </div>
             </div>
           </div>
@@ -89,14 +88,14 @@
           </div>
         </div>
       </div>
-      <camp-detail 
-      :logo="camp.logo" 
-      :campname="camp.name" 
-      :detail="camp.detail" 
-      :color="camp.color" 
-      :id="camp.id" 
-      v-if="showCampdetail">
-      </camp-detail>
+      <camp-detail
+        :logo="camp.logo"
+        :campname="camp.name"
+        :detail="camp.detail"
+        :color="camp.color"
+        :id="camp.id"
+        v-if="showCampdetail"
+      ></camp-detail>
     </div>
   </section>
 </template>
@@ -110,7 +109,7 @@ export default {
   },
   data () {
     return {
-      camps:[
+      camps: [
         {
           id: 'app',
           name: 'Appermort',
@@ -152,17 +151,15 @@ export default {
       showStatus: false
     }
   },
-  methods:{
-    show(camp){
-      console.log("click")
+  methods: {
+    show (camp) {
       this.showCampdetail = true
       this.selected = camp
     }
   },
-  computed:{
-    camp(){
-      console.log(this.camps.filter(x => x.id == this.selected)[0])
-      return this.camps.filter(x => x.id == this.selected)[0]
+  computed: {
+    camp () {
+      return this.camps.filter(x => x.id === this.selected)[0]
     }
   }
 }
@@ -220,27 +217,27 @@ export default {
   margin: auto;
 }
 
-#register .app-camp .register-icon-wrapper{
+#register .app-camp .register-icon-wrapper {
   border: 2px solid #1fb4ec;
   padding: 5px;
 }
 
-#register .network-camp .register-icon-wrapper{
+#register .network-camp .register-icon-wrapper {
   border: 2px solid #d61732;
   padding: 5px;
 }
 
-#register .data-camp .register-icon-wrapper{
+#register .data-camp .register-icon-wrapper {
   border: 2px solid #9013fe;
   padding: 5px;
 }
 
-#register .game-camp .register-icon-wrapper{
+#register .game-camp .register-icon-wrapper {
   border: 2px solid #6c980d;
   padding: 5px;
 }
 
-#register .iot-camp .register-icon-wrapper{
+#register .iot-camp .register-icon-wrapper {
   border: 2px solid #f5a623;
   padding: 5px;
 }
@@ -255,38 +252,38 @@ export default {
   font-weight: 600;
 }
 
-#register .app-camp .register-title{
+#register .app-camp .register-title {
   color: #1fb4ec;
 }
 
-#register .network-camp .register-title{
+#register .network-camp .register-title {
   color: #d61732;
 }
 
-#register .data-camp .register-title{
+#register .data-camp .register-title {
   color: #9013fe;
 }
 
-#register .game-camp .register-title{
+#register .game-camp .register-title {
   color: #6c980d;
 }
 
-#register .iot-camp .register-title{
+#register .iot-camp .register-title {
   color: #f5a623;
 }
 
-#register .iot-camp .register-title{
+#register .iot-camp .register-title {
   color: #f5a623;
 }
 
-#register .inner-register-icon{
+#register .inner-register-icon {
   height: 120px;
   width: 120px;
   transform: rotate(-45deg);
   padding: 10px;
 }
 
-#register .inner-register-icon img{
+#register .inner-register-icon img {
   display: block;
   width: 100%;
 }
@@ -303,7 +300,7 @@ export default {
     padding-top: 30px;
   }
 
-   #register .register-wrapper{
+  #register .register-wrapper {
     overflow-x: scroll;
   }
 }
