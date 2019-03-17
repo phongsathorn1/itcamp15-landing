@@ -12,7 +12,13 @@
         <!-- <div class="sponsor-lv1"></div>
         <div class="sponsor-lv1"></div>-->
       </div>
-      <!-- <div class="sponsor-row">
+      <div class="sponsor-lv1">
+        <img src="@/assets/sponsor/kmitl.svg" alt="คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" />
+      </div>
+      <!-- <div class="sponsor-lv1"></div>
+      <div class="sponsor-lv1"></div> -->
+    </div>
+    <!-- <div class="sponsor-row">
       <div class="sponsor-lv2"></div>
       <div class="sponsor-lv2"></div>
       <div class="sponsor-lv2"></div>
@@ -58,7 +64,7 @@ export default {
 .sponsor-lv1 {
   width: 131px;
   height: 131px;
-  margin: 0 3em;
+  margin: 0 30px;
 }
 
 .sponsor-lv2 {
