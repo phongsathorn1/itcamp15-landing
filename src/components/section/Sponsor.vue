@@ -9,11 +9,11 @@
             alt="คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง"
           >
         </div>
+        <div class="sponsor-lv1">
+          <img src="@/assets/sponsor/kmitl.svg" alt="สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" />
+        </div>
         <!-- <div class="sponsor-lv1"></div>
         <div class="sponsor-lv1"></div>-->
-      </div>
-      <div class="sponsor-lv1">
-        <img src="@/assets/sponsor/kmitl.svg" alt="คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง" />
       </div>
       <!-- <div class="sponsor-lv1"></div>
       <div class="sponsor-lv1"></div> -->
