@@ -69,12 +69,12 @@ export default {
   margin-top: 20px;
 }
 
-#heading-container .logo{
+#heading-container .logo {
   width: 200px;
 }
 
 @media (max-width: 768px) {
-  #heading-container .logo{
+  #heading-container .logo {
     width: 160px;
   }
 }
