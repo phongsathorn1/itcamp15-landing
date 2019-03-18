@@ -52,7 +52,7 @@ export default {
           {
             breakpoint: 840,
             settings: {
-              arrows: false,
+              arrows: true,
               centerMode: false,
               centerPadding: '40px',
               slidesToShow: 2
@@ -61,7 +61,7 @@ export default {
           {
             breakpoint: 480,
             settings: {
-              arrows: false,
+              arrows: true,
               centerMode: false,
               // centerPadding: '40px',
               slidesToShow: 1
