@@ -1,10 +1,7 @@
 <template>
   <nav class="navbar main-navbar navbar-expand">
-    <div class="container-fluid flex-column flex-md-row">
+    <div class="container flex-column flex-md-row">
       <a class="navbar-brand mr-0 mr-md-2" href="#">ITCAMP15</a>
-      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>-->
       <div class="navbar-nav-scroll" id="navbar">
         <ul class="navbar-nav mr-auto ml-auto mx-auto flex-row">
           <li class="nav-item">

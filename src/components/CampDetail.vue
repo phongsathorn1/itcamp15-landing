@@ -48,7 +48,6 @@ export default {
 }
 
 .camp-detail-box .btn-register {
-  // background: linear-gradient(243deg, #fad961, #f76b1c);
   font-size: 1em;
   font-weight: 500;
   color: #ffffff;
@@ -60,6 +59,6 @@ export default {
 }
 
 .inner-camp-detail-box p {
-  text-indent: 2em;
+  white-space: pre-wrap;
 }
 </style>
