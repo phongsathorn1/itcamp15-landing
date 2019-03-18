@@ -109,4 +109,15 @@ export default {
   position: absolute;
   z-index: 2;
 }
+
+#location ul{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+@media (max-width: 768px) {
+  #location .text-right{
+    text-align: center !important;
+  }
+}
 </style>
