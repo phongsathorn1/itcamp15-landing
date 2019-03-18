@@ -12,7 +12,7 @@
               <img class="timeline-icon-img" src="@/assets/group-7.svg">
             </div>
             <div class="timeline-title">เปิดรับสมัคร</div>
-            <div class="timeline-range">15 มีนาคม - 16 เมษายน</div>
+            <div class="timeline-range">วันนี้ - 16 เมษายน</div>
           </div>
           <div class="col-md-3 timeline-block">
             <div class="timeline-icon">
