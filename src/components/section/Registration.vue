@@ -308,6 +308,7 @@ export default {
 
   #register .register-wrapper {
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch
   }
 }
 
