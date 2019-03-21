@@ -8,6 +8,7 @@
     <Location/>
     <QA/>
     <Gallery/>
+    <Footer/>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Location from '@/components/section/Location.vue'
 import QA from '@/components/section/QA.vue'
 import Gallery from '@/components/section/Gallery.vue'
 import Navbar from '@/components/Navbar.vue'
+import Footer from '@/components/section/Footer.vue'
 
 export default {
   name: 'app',
@@ -31,7 +33,8 @@ export default {
     Location,
     QA,
     Gallery,
-    Navbar
+    Navbar,
+    Footer
   }
 }
 </script>
