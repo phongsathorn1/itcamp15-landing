@@ -1,48 +1,18 @@
 <template>
   <section class="home-section" id="timeline">
-    <div class="strip-top"></div>
-    <div class="container">
-      <h1>กำหนดการ</h1>
-      <span class="subhead">ตารางเวลาของค่ายไอทีแคมป์</span>
-      <div class="timeline-wrapper">
-        <div class="row">
-          <div class="col-md-3 timeline-block">
-            <div class="timeline-icon">
-              <img class="timeline-icon-img" src="@/assets/group-7.svg">
-            </div>
-            <div class="timeline-title">เปิดรับสมัคร</div>
-            <div class="timeline-range">วันนี้ - 16 เมษายน</div>
-          </div>
-          <div class="col-md-3 timeline-block">
-            <div class="timeline-icon">
-              <img class="timeline-icon-img" src="@/assets/group-6.svg">
-            </div>
-            <div class="timeline-title">ประกาศผล</div>
-            <div class="timeline-range">28 เมษายน</div>
-          </div>
-          <div class="col-md-3 timeline-block">
-            <div class="timeline-icon">
-              <img class="timeline-icon-img" src="@/assets/group-5.svg">
-            </div>
-            <div class="timeline-title">ยืนยันสิทธิ์</div>
-            <div class="timeline-range">28 เมษายน - 3 พฤษภาคม</div>
-          </div>
-          <div class="col-md-3 timeline-block">
-            <div class="timeline-icon">
-              <img class="timeline-icon-img" src="@/assets/group-4.svg">
-            </div>
-            <div class="timeline-title">เปิดค่าย</div>
-            <div class="timeline-range">30 พฤษภาคม - 2 มิถุนายน</div>
-          </div>
-        </div>
+    <!-- <div class="strip-top"></div> -->
+    <footer class="page-footer font-small blue">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2019 Copyright: ITForge
       </div>
-    </div>
+      <!-- Copyright -->
+    </footer>
   </section>
 </template>
 
 <script>
-export default {
-}
+export default {};
 </script>
 
 <style lang="scss">
